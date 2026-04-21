@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us | [Your Company Name] — Tree Service in [City]</title>
+  <meta name="description" content="Meet the team behind [Your Company Name]. Family-owned tree service in [City] with [XX]+ years of experience, certified arborists, and a reputation built on honest work.">
+  <link rel="canonical" href="https://yourdomain.com/about.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="About [Your Company Name] — Local Tree Experts in [City]">
+  <meta property="og:description" content="Family-owned and operated since [Year Founded]. Meet the crew, learn our story, and see why [Service Region] homeowners trust us with their trees.">
+  <meta property="og:image" content="https://placehold.co/1200x630/2d4a2b/ffffff?text=About+Our+Team">
+  <meta property="og:url" content="https://yourdomain.com/about.html">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About [Your Company Name] — Local Tree Experts in [City]">
+  <meta name="twitter:description" content="Family-owned and operated since [Year Founded]. Meet the crew that serves [Service Region].">
+  <meta name="twitter:image" content="https://placehold.co/1200x630/2d4a2b/ffffff?text=About+Our+Team">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary:        '#2d4a2b',
+            'primary-dark': '#1d3019',
+            'primary-light':'#4a7048',
+            accent:         '#e8772e',
+            'accent-dark':  '#c75c1c',
+            'text-muted':   '#4f5a4d',
+            'bg-alt':       '#f4f6f2',
+          },
+          fontFamily: {
+            heading: ['Oswald', 'sans-serif'],
+            body:    ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- BreadcrumbList JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://yourdomain.com/index.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "About",
+        "item": "https://yourdomain.com/about.html"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Skip to Content -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- =====================================================================
+       HEADER (shared — identical markup on every page; JS sets aria-current)
+       ===================================================================== -->
+  <header class="site-header sticky top-0 z-40 bg-white border-b border-[var(--color-border)]">
+    <div class="container">
+      <div class="flex items-center justify-between h-16 gap-4">
+
+        <!-- Logo -->
+        <a href="index.html" class="flex flex-col leading-none shrink-0">
+          <span class="font-heading font-bold text-xl text-[var(--color-primary)]">[Your Company Name]</span>
+          <span class="text-[11px] tracking-wider uppercase text-[var(--color-text-muted)]">Crews · Climbers · Cleanup</span>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden lg:flex gap-6" aria-label="Primary navigation">
+          <a href="index.html"         class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors">Home</a>
+          <a href="about.html"         class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors" aria-current="page">About</a>
+          <a href="services.html"      class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors">Services</a>
+          <a href="service-areas.html" class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors">Service Areas</a>
+          <a href="gallery.html"       class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors">Gallery</a>
+          <a href="testimonials.html"  class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors">Reviews</a>
+          <a href="faq.html"           class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors">FAQ</a>
+          <a href="blog.html"          class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors">Blog</a>
+          <a href="contact.html"       class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors">Contact</a>
+        </nav>
+
+        <!-- Right: Phone + CTA -->
+        <div class="flex items-center gap-3 shrink-0">
+          <a href="tel:[Phone Number]" class="hidden md:flex items-center gap-2 text-sm font-semibold text-[var(--color-primary)]" aria-label="Call us at [Phone Number]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.21 3.18 2 2 0 0 1 3.22 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16z"/></svg>
+            [Phone Number]
+          </a>
+          <a href="quote.html" class="btn-primary hidden md:inline-flex text-sm py-2.5 px-5">Get a Free Quote</a>
+
+          <!-- Hamburger -->
+          <button class="lg:hidden p-2 rounded-md text-[var(--color-text)]" aria-label="Toggle menu" aria-expanded="false" data-menu-toggle>
+            <svg data-icon-hamburger xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+            <svg data-icon-close class="hidden" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="lg:hidden hidden bg-white border-t border-[var(--color-border)]" aria-label="Mobile navigation">
+      <div class="container py-4">
+        <nav class="flex flex-col">
+          <a href="index.html"         class="mobile-nav-link">Home</a>
+          <a href="about.html"         class="mobile-nav-link" aria-current="page">About</a>
+          <a href="services.html"      class="mobile-nav-link">Services</a>
+          <a href="service-areas.html" class="mobile-nav-link">Service Areas</a>
+          <a href="gallery.html"       class="mobile-nav-link">Gallery</a>
+          <a href="testimonials.html"  class="mobile-nav-link">Reviews</a>
+          <a href="faq.html"           class="mobile-nav-link">FAQ</a>
+          <a href="blog.html"          class="mobile-nav-link">Blog</a>
+          <a href="contact.html"       class="mobile-nav-link">Contact</a>
+        </nav>
+        <div class="mt-4 flex flex-col gap-3">
+          <a href="tel:[Phone Number]" class="flex items-center gap-2 text-sm font-semibold text-[var(--color-primary)]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.21 3.18 2 2 0 0 1 3.22 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16z"/></svg>
+            [Phone Number]
+          </a>
+          <a href="quote.html" class="btn-primary text-center text-sm">Get a Free Quote</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- END HEADER -->
+
+  <!-- =====================================================================
+       MAIN CONTENT
+       ===================================================================== -->
+  <main id="main">
+
+    <!-- -------------------------------------------------------------------
+         PAGE HERO
+         ------------------------------------------------------------------- -->
+    <section class="page-hero" aria-label="Page header">
+      <div
+        style="position:absolute;inset:0;background-image:url('https://placehold.co/1920x480/2d4a2b/ffffff?text=Our+Team');background-size:cover;background-position:center;opacity:0.25;"
+        role="img"
+        aria-label="Tree crew on a job site — replace with your team photo"
+      ></div>
+      <div style="position:relative;z-index:1;">
+        <nav class="breadcrumb mb-4" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="breadcrumb-sep" aria-hidden="true">›</span>
+          <span aria-current="page">About</span>
+        </nav>
+        <h1>About [Your Company Name]</h1>
+        <p class="mt-3 max-w-xl mx-auto text-white/75 text-lg">Real people. Real expertise. Real results — for over [XX] years.</p>
+      </div>
+    </section>
+
+    <!-- -------------------------------------------------------------------
+         OUR STORY
+         ------------------------------------------------------------------- -->
+    <section class="section-pad bg-white" aria-labelledby="story-heading">
+      <div class="container">
+        <div class="grid lg:grid-cols-2 gap-14 items-center">
+
+          <!-- Left: text -->
+          <div>
+            <p class="eyebrow mb-3">Our Story</p>
+            <h2 id="story-heading">Built From the Ground Up — One Tree at a Time</h2>
+            <p class="mt-5 mb-5">
+              Founded in [Year Founded] by [Founder Name], [Your Company Name] started as a one-truck operation with a simple goal: give local homeowners an honest, reliable option for tree work. No inflated quotes, no cutting corners, no subcontracting jobs to crews we'd never met.
+            </p>
+            <p class="mb-5">
+              Over the years that reputation grew through word of mouth — neighbor telling neighbor, realtor recommending us at closings, property managers putting us on speed dial. Today we run a full crew of trained climbers and ground workers, backed by modern equipment and the same standards that drove the very first job.
+            </p>
+            <p class="mb-8">
+              We're still locally owned, still answering our own phones, and still showing up personally to give every estimate. The company is bigger — but the commitment hasn't changed at all.
+            </p>
+
+            <div class="flex flex-wrap gap-6">
+              <div class="text-center">
+                <p class="font-heading font-bold text-4xl text-[var(--color-primary)]">[XX]+</p>
+                <p class="text-sm text-[var(--color-text-muted)] font-medium mt-1">Years Serving [Region]</p>
+              </div>
+              <div class="text-center">
+                <p class="font-heading font-bold text-4xl text-[var(--color-primary)]">[XXXX]+</p>
+                <p class="text-sm text-[var(--color-text-muted)] font-medium mt-1">Jobs Completed</p>
+              </div>
+              <div class="text-center">
+                <p class="font-heading font-bold text-4xl text-[var(--color-primary)]">4.9★</p>
+                <p class="text-sm text-[var(--color-text-muted)] font-medium mt-1">Average Google Rating</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: image -->
+          <div>
+            <img
+              src="https://placehold.co/600x700/2d4a2b/ffffff?text=Founder+Photo"
+              alt="[Founder Name], founder of [Your Company Name] — replace with an owner or team photo"
+              class="rounded-xl shadow-lg w-full object-cover"
+              loading="lazy"
+              width="600"
+              height="700"
+            >
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------------------------------------------------
+         MISSION & VALUES
+         ------------------------------------------------------------------- -->
+    <section class="section-pad bg-[var(--color-bg-alt)]" aria-labelledby="values-heading">
+      <div class="container">
+        <div class="text-center mb-12">
+          <p class="eyebrow mb-3">What Drives Us</p>
+          <h2 id="values-heading">Our Mission &amp; Values</h2>
+          <p class="mt-4 max-w-2xl mx-auto">We measure every job against three principles. They're not on a poster in our office — they're the reason clients call us back and refer their friends.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+
+          <!-- Value 1 -->
+          <div class="value-card">
+            <div class="value-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="mb-3">Integrity</h3>
+            <p class="text-sm leading-relaxed">We give honest assessments — even when that means telling a client their tree is fine and doesn't need to come down. You'll always get a straight answer and a fair price, no upselling.</p>
+          </div>
+
+          <!-- Value 2 -->
+          <div class="value-card">
+            <div class="value-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 11.08 22 12 12 22 2 12 2 11.08"/><path d="M22 11.08l-10-9-10 9"/><polyline points="12 22 12 13"/><path d="M17 17l-5 5-5-5"/></svg>
+            </div>
+            <h3 class="mb-3">Quality Workmanship</h3>
+            <p class="text-sm leading-relaxed">From the first cut to the final rake, every step is done right. Our climbers are trained to industry standards, our equipment is maintained, and our cleanup sets the bar in the region.</p>
+          </div>
+
+          <!-- Value 3 -->
+          <div class="value-card">
+            <div class="value-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 class="mb-3">Customer-First</h3>
+            <p class="text-sm leading-relaxed">We work around your schedule, communicate at every step, and never leave a site until you're satisfied. Your property matters to us — we treat it like our own.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------------------------------------------------
+         MEET THE TEAM
+         ------------------------------------------------------------------- -->
+    <section class="section-pad bg-white" aria-labelledby="team-heading">
+      <div class="container">
+        <div class="text-center mb-12">
+          <p class="eyebrow mb-3">The People Behind the Work</p>
+          <h2 id="team-heading">Meet the Team</h2>
+          <p class="mt-4 max-w-xl mx-auto">Every crew member is vetted, trained, and held to the same standards we'd want applied to our own homes.</p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <!-- Team Member 1 -->
+          <article class="team-card">
+            <img
+              src="https://placehold.co/400x400/2d4a2b/ffffff?text=Team+Member"
+              alt="[Team Member Name], [Role] at [Your Company Name] — replace with their headshot"
+              loading="lazy"
+              width="400"
+              height="400"
+            >
+            <h3 class="text-lg mb-0.5">[Team Member Name]</h3>
+            <p class="text-sm font-semibold text-[var(--color-accent)] mb-2">[Role / Title]</p>
+            <p class="text-sm">ISA Certified Arborist with [X] years of experience in residential and commercial tree work.</p>
+          </article>
+
+          <!-- Team Member 2 -->
+          <article class="team-card">
+            <img
+              src="https://placehold.co/400x400/4a7048/ffffff?text=Team+Member"
+              alt="[Team Member Name], [Role] at [Your Company Name] — replace with their headshot"
+              loading="lazy"
+              width="400"
+              height="400"
+            >
+            <h3 class="text-lg mb-0.5">[Team Member Name]</h3>
+            <p class="text-sm font-semibold text-[var(--color-accent)] mb-2">[Role / Title]</p>
+            <p class="text-sm">Lead climber specializing in technical removals, crane work, and hazard tree assessments.</p>
+          </article>
+
+          <!-- Team Member 3 -->
+          <article class="team-card">
+            <img
+              src="https://placehold.co/400x400/1d3019/ffffff?text=Team+Member"
+              alt="[Team Member Name], [Role] at [Your Company Name] — replace with their headshot"
+              loading="lazy"
+              width="400"
+              height="400"
+            >
+            <h3 class="text-lg mb-0.5">[Team Member Name]</h3>
+            <p class="text-sm font-semibold text-[var(--color-accent)] mb-2">[Role / Title]</p>
+            <p class="text-sm">Ground crew supervisor with a focus on safety protocols and equipment operation.</p>
+          </article>
+
+          <!-- Team Member 4 -->
+          <article class="team-card">
+            <img
+              src="https://placehold.co/400x400/e8772e/ffffff?text=Team+Member"
+              alt="[Team Member Name], [Role] at [Your Company Name] — replace with their headshot"
+              loading="lazy"
+              width="400"
+              height="400"
+            >
+            <h3 class="text-lg mb-0.5">[Team Member Name]</h3>
+            <p class="text-sm font-semibold text-[var(--color-accent)] mb-2">[Role / Title]</p>
+            <p class="text-sm">Office and scheduling coordinator — the first voice you hear when you call us.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------------------------------------------------
+         CERTIFICATIONS
+         ------------------------------------------------------------------- -->
+    <section class="section-pad bg-[var(--color-bg-alt)]" aria-labelledby="certs-heading">
+      <div class="container">
+        <div class="text-center mb-10">
+          <p class="eyebrow mb-3">Credentials</p>
+          <h2 id="certs-heading">Certified, Licensed &amp; Accredited</h2>
+          <p class="mt-4 max-w-xl mx-auto">We maintain the certifications and memberships that hold us to a higher standard — and give you peace of mind.</p>
+        </div>
+
+        <div class="flex flex-wrap justify-center items-center gap-8">
+
+          <div class="cert-logo">
+            <img
+              src="https://placehold.co/200x100/cccccc/555555?text=ISA+Certified"
+              alt="ISA Certified Arborist — replace with the official ISA logo"
+              loading="lazy"
+              width="200"
+              height="100"
+            >
+          </div>
+
+          <div class="cert-logo">
+            <img
+              src="https://placehold.co/200x100/cccccc/555555?text=BBB+Accredited"
+              alt="Better Business Bureau Accredited — replace with the official BBB logo"
+              loading="lazy"
+              width="200"
+              height="100"
+            >
+          </div>
+
+          <div class="cert-logo">
+            <img
+              src="https://placehold.co/200x100/cccccc/555555?text=TCIA+Member"
+              alt="Tree Care Industry Association member — replace with the official TCIA logo"
+              loading="lazy"
+              width="200"
+              height="100"
+            >
+          </div>
+
+          <div class="cert-logo">
+            <img
+              src="https://placehold.co/200x100/cccccc/555555?text=State+License"
+              alt="[State] Contractor License — replace with your state license badge"
+              loading="lazy"
+              width="200"
+              height="100"
+            >
+          </div>
+
+          <div class="cert-logo">
+            <img
+              src="https://placehold.co/200x100/cccccc/555555?text=Insured"
+              alt="Fully insured — replace with your insurance carrier or certificate badge"
+              loading="lazy"
+              width="200"
+              height="100"
+            >
+          </div>
+
+          <div class="cert-logo">
+            <img
+              src="https://placehold.co/200x100/cccccc/555555?text=Additional+Cert"
+              alt="[Certification Name] — replace with your additional credential logo"
+              loading="lazy"
+              width="200"
+              height="100"
+            >
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------------------------------------------------
+         CTA BAND
+         ------------------------------------------------------------------- -->
+    <section class="cta-band" aria-label="Call to action">
+      <div class="container max-w-2xl">
+        <p class="eyebrow mb-4" style="color: var(--color-accent);">No Obligation</p>
+        <h2 class="mb-4">Get Your Free In-Home Estimate</h2>
+        <p class="mb-8 text-lg" style="color: rgba(255,255,255,0.8);">One of our arborists will visit your property, assess your trees, and provide a written quote — at no charge and with no pressure to book.</p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="quote.html" class="btn-primary">Request a Free Quote</a>
+          <a href="contact.html" class="btn-secondary-white">Contact the Team</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <!-- END MAIN -->
+
+  <!-- =====================================================================
+       FOOTER (shared — identical markup on every page)
+       ===================================================================== -->
+  <footer class="bg-[var(--color-primary-dark)] text-white pt-16 pb-8 mt-0">
+    <div class="container">
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+
+        <!-- Col 1: Brand -->
+        <div>
+          <div class="mb-4">
+            <span class="font-heading font-bold text-2xl text-white">[Your Company Name]</span>
+            <p class="text-[11px] tracking-wider uppercase mt-0.5" style="color: rgba(255,255,255,0.5);">Crews · Climbers · Cleanup</p>
+          </div>
+          <p class="text-sm leading-relaxed mb-5" style="color: rgba(255,255,255,0.65);">Expert tree removal, trimming, and emergency service for homeowners and businesses across [Service Region]. Locally owned, fully insured, and committed to leaving every job site cleaner than we found it.</p>
+          <p class="text-sm" style="color: rgba(255,255,255,0.5);">Licensed &amp; Insured · License #[License #]</p>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <p class="footer-heading">Quick Links</p>
+          <ul>
+            <li><a href="index.html"         class="footer-link">Home</a></li>
+            <li><a href="about.html"         class="footer-link">About Us</a></li>
+            <li><a href="services.html"      class="footer-link">Services</a></li>
+            <li><a href="service-areas.html" class="footer-link">Service Areas</a></li>
+            <li><a href="gallery.html"       class="footer-link">Gallery</a></li>
+            <li><a href="testimonials.html"  class="footer-link">Reviews</a></li>
+            <li><a href="faq.html"           class="footer-link">FAQ</a></li>
+            <li><a href="blog.html"          class="footer-link">Blog</a></li>
+            <li><a href="contact.html"       class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services -->
+        <div>
+          <p class="footer-heading">Services</p>
+          <ul>
+            <li><a href="services.html#service-one"   class="footer-link">Tree Removal</a></li>
+            <li><a href="services.html#service-two"   class="footer-link">Tree Trimming &amp; Pruning</a></li>
+            <li><a href="services.html#service-three" class="footer-link">Stump Grinding</a></li>
+            <li><a href="services.html#service-four"  class="footer-link">Storm Damage Cleanup</a></li>
+            <li><a href="services.html#service-five"  class="footer-link">Land Clearing</a></li>
+            <li><a href="services.html#service-six"   class="footer-link">Emergency Service</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact -->
+        <div>
+          <p class="footer-heading">Contact</p>
+
+          <div class="footer-contact-row">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.21 3.18 2 2 0 0 1 3.22 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16z"/></svg>
+            <a href="tel:[Phone Number]">[Phone Number]</a>
+          </div>
+
+          <div class="footer-contact-row">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:[Email Address]">[Email Address]</a>
+          </div>
+
+          <div class="footer-contact-row">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <address style="font-style: normal;">[Street Address]<br>[City], [State] [ZIP]</address>
+          </div>
+
+          <div class="footer-contact-row">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Mon–Sat 7am–6pm<br><span style="color: var(--color-accent);">24/7 Storm Response</span></span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Divider -->
+      <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+
+        <!-- Social Icons -->
+        <div class="flex items-center gap-3">
+          <a href="https://facebook.com/[your-page]" class="social-icon" aria-label="Follow us on Facebook" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://instagram.com/[your-handle]" class="social-icon" aria-label="Follow us on Instagram" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://www.google.com/maps?cid=[your-cid]" class="social-icon" aria-label="Find us on Google" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </a>
+        </div>
+
+        <!-- Legal -->
+        <p class="text-xs text-center" style="color: rgba(255,255,255,0.4);">
+          &copy; [Year] [Your Company Name]. All rights reserved.
+          &nbsp;·&nbsp;
+          <a href="privacy.html" class="hover:text-white transition-colors">Privacy</a>
+          &nbsp;·&nbsp;
+          <a href="terms.html" class="hover:text-white transition-colors">Terms</a>
+        </p>
+
+      </div>
+    </div>
+  </footer>
+  <!-- END FOOTER -->
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

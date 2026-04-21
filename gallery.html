@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery | [Your Company Name] — Tree Service in [City]</title>
+  <meta name="description" content="Browse photos of recent tree removal, trimming, stump grinding, and storm cleanup jobs completed by [Your Company Name] across [Service Region].">
+  <link rel="canonical" href="https://yourdomain.com/gallery.html">
+
+  <meta property="og:title" content="Gallery | [Your Company Name]">
+  <meta property="og:description" content="Photos of recent jobs — tree removal, trimming, stump grinding, and more.">
+  <meta property="og:image" content="https://placehold.co/1200x630/2d4a2b/ffffff?text=Our+Work">
+  <meta property="og:url" content="https://yourdomain.com/gallery.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gallery | [Your Company Name]">
+  <meta name="twitter:description" content="Photos of recent tree service jobs.">
+  <meta name="twitter:image" content="https://placehold.co/1200x630/2d4a2b/ffffff?text=Our+Work">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2d4a2b', 'primary-dark': '#1d3019', 'primary-light': '#4a7048',
+            accent: '#e8772e', 'accent-dark': '#c75c1c',
+            'text-muted': '#4f5a4d', 'bg-alt': '#f4f6f2',
+          },
+          fontFamily: { heading: ['Oswald','sans-serif'], body: ['Inter','sans-serif'] },
+        },
+      },
+    }
+  </script>
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://yourdomain.com/index.html"},
+      {"@type":"ListItem","position":2,"name":"Gallery","item":"https://yourdomain.com/gallery.html"}
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header sticky top-0 z-40 bg-white border-b border-[var(--color-border)]">
+    <div class="container">
+      <div class="flex items-center justify-between h-16 gap-4">
+        <a href="index.html" class="flex flex-col leading-none shrink-0">
+          <span class="font-heading font-bold text-xl text-[var(--color-primary)]">[Your Company Name]</span>
+          <span class="text-[11px] tracking-wider uppercase text-[var(--color-text-muted)]">Crews · Climbers · Cleanup</span>
+        </a>
+        <nav class="hidden lg:flex gap-6" aria-label="Primary navigation">
+          <a href="index.html" class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors">Home</a>
+          <a href="about.html" class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors">About</a>
+          <a href="services.html" class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors">Services</a>
+          <a href="service-areas.html" class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors">Service Areas</a>
+          <a href="gallery.html" class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors" aria-current="page">Gallery</a>
+          <a href="testimonials.html" class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors">Reviews</a>
+          <a href="faq.html" class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors">FAQ</a>
+          <a href="blog.html" class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors">Blog</a>
+          <a href="contact.html" class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors">Contact</a>
+        </nav>
+        <div class="flex items-center gap-3 shrink-0">
+          <a href="tel:[Phone Number]" class="hidden md:flex items-center gap-2 text-sm font-semibold text-[var(--color-primary)]" aria-label="Call us at [Phone Number]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.21 3.18 2 2 0 0 1 3.22 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16z"/></svg>
+            [Phone Number]
+          </a>
+          <a href="quote.html" class="btn-primary hidden md:inline-flex text-sm py-2.5 px-5">Get a Free Quote</a>
+          <button class="lg:hidden p-2 rounded-md text-[var(--color-text)]" aria-label="Toggle menu" aria-expanded="false" data-menu-toggle>
+            <svg data-icon-hamburger xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+            <svg data-icon-close class="hidden" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu" class="lg:hidden hidden bg-white border-t border-[var(--color-border)]" aria-label="Mobile navigation">
+      <div class="container py-4">
+        <nav class="flex flex-col">
+          <a href="index.html" class="mobile-nav-link">Home</a>
+          <a href="about.html" class="mobile-nav-link">About</a>
+          <a href="services.html" class="mobile-nav-link">Services</a>
+          <a href="service-areas.html" class="mobile-nav-link">Service Areas</a>
+          <a href="gallery.html" class="mobile-nav-link" aria-current="page">Gallery</a>
+          <a href="testimonials.html" class="mobile-nav-link">Reviews</a>
+          <a href="faq.html" class="mobile-nav-link">FAQ</a>
+          <a href="blog.html" class="mobile-nav-link">Blog</a>
+          <a href="contact.html" class="mobile-nav-link">Contact</a>
+        </nav>
+        <div class="mt-4 flex flex-col gap-3">
+          <a href="tel:[Phone Number]" class="flex items-center gap-2 text-sm font-semibold text-[var(--color-primary)]">[Phone Number]</a>
+          <a href="quote.html" class="btn-primary text-center text-sm">Get a Free Quote</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-hero" aria-label="Page header">
+      <div style="position:absolute;inset:0;background-image:url('https://placehold.co/1920x480/2d4a2b/ffffff?text=Our+Work');background-size:cover;background-position:center;opacity:0.25;" role="img" aria-label="Collage of completed tree jobs — replace with a favorite job photo"></div>
+      <div style="position:relative;z-index:1;">
+        <nav class="breadcrumb mb-4" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="breadcrumb-sep" aria-hidden="true">›</span>
+          <span aria-current="page">Gallery</span>
+        </nav>
+        <h1>Our Work</h1>
+        <p class="mt-3 max-w-xl mx-auto text-white/75 text-lg">Every photo here is a real job — tree removed, yard cleaned, homeowner happy.</p>
+      </div>
+    </section>
+
+    <section class="section-pad bg-white" aria-label="Gallery filters">
+      <div class="container">
+        <div class="flex flex-wrap justify-center gap-2 mb-10" role="tablist" aria-label="Filter gallery">
+          <button type="button" class="filter-pill is-active" data-filter="all" role="tab" aria-selected="true">All Jobs</button>
+          <button type="button" class="filter-pill" data-filter="service-one" role="tab" aria-selected="false">Service One</button>
+          <button type="button" class="filter-pill" data-filter="service-two" role="tab" aria-selected="false">Service Two</button>
+          <button type="button" class="filter-pill" data-filter="service-three" role="tab" aria-selected="false">Service Three</button>
+        </div>
+
+        <div class="columns-1 sm:columns-2 lg:columns-3 gap-4 [&>*]:mb-4 [&>*]:break-inside-avoid">
+
+          <a href="https://placehold.co/1200x1200/2d4a2b/ffffff?text=Job+01" data-lightbox="gallery" data-lightbox-alt="Complete tree removal on residential property — replace with your photo" class="block rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+            <img src="https://placehold.co/600x600/2d4a2b/ffffff?text=Job+01" loading="lazy" alt="Complete tree removal on residential property — replace with your photo" class="w-full h-auto block">
+          </a>
+
+          <a href="https://placehold.co/1200x1600/2d4a2b/ffffff?text=Job+02" data-lightbox="gallery" data-lightbox-alt="Climber pruning large oak — replace with your photo" class="block rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+            <img src="https://placehold.co/600x800/2d4a2b/ffffff?text=Job+02" loading="lazy" alt="Climber pruning large oak — replace with your photo" class="w-full h-auto block">
+          </a>
+
+          <a href="https://placehold.co/1200x1000/2d4a2b/ffffff?text=Job+03" data-lightbox="gallery" data-lightbox-alt="Stump grinding in progress — replace with your photo" class="block rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+            <img src="https://placehold.co/600x500/2d4a2b/ffffff?text=Job+03" loading="lazy" alt="Stump grinding in progress — replace with your photo" class="w-full h-auto block">
+          </a>
+
+          <a href="https://placehold.co/1200x1400/2d4a2b/ffffff?text=Job+04" data-lightbox="gallery" data-lightbox-alt="Storm damage cleanup — replace with your photo" class="block rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+            <img src="https://placehold.co/600x700/2d4a2b/ffffff?text=Job+04" loading="lazy" alt="Storm damage cleanup — replace with your photo" class="w-full h-auto block">
+          </a>
+
+          <a href="https://placehold.co/1200x1200/2d4a2b/ffffff?text=Job+05" data-lightbox="gallery" data-lightbox-alt="Crew lowering large limb with rigging — replace with your photo" class="block rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+            <img src="https://placehold.co/600x600/2d4a2b/ffffff?text=Job+05" loading="lazy" alt="Crew lowering large limb with rigging — replace with your photo" class="w-full h-auto block">
+          </a>
+
+          <a href="https://placehold.co/1200x1600/2d4a2b/ffffff?text=Job+06" data-lightbox="gallery" data-lightbox-alt="Dangerous lean — before photo — replace with your photo" class="block rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+            <img src="https://placehold.co/600x800/2d4a2b/ffffff?text=Job+06" loading="lazy" alt="Dangerous lean — before photo — replace with your photo" class="w-full h-auto block">
+          </a>
+
+          <a href="https://placehold.co/1200x1000/2d4a2b/ffffff?text=Job+07" data-lightbox="gallery" data-lightbox-alt="Clean yard after removal — after photo — replace with your photo" class="block rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+            <img src="https://placehold.co/600x500/2d4a2b/ffffff?text=Job+07" loading="lazy" alt="Clean yard after removal — after photo — replace with your photo" class="w-full h-auto block">
+          </a>
+
+          <a href="https://placehold.co/1200x1400/2d4a2b/ffffff?text=Job+08" data-lightbox="gallery" data-lightbox-alt="Bucket truck reaching over house — replace with your photo" class="block rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+            <img src="https://placehold.co/600x700/2d4a2b/ffffff?text=Job+08" loading="lazy" alt="Bucket truck reaching over house — replace with your photo" class="w-full h-auto block">
+          </a>
+
+          <a href="https://placehold.co/1200x1200/2d4a2b/ffffff?text=Job+09" data-lightbox="gallery" data-lightbox-alt="Land clearing for new construction — replace with your photo" class="block rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+            <img src="https://placehold.co/600x600/2d4a2b/ffffff?text=Job+09" loading="lazy" alt="Land clearing for new construction — replace with your photo" class="w-full h-auto block">
+          </a>
+
+          <a href="https://placehold.co/1200x1600/2d4a2b/ffffff?text=Job+10" data-lightbox="gallery" data-lightbox-alt="Trimming branches away from roof — replace with your photo" class="block rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+            <img src="https://placehold.co/600x800/2d4a2b/ffffff?text=Job+10" loading="lazy" alt="Trimming branches away from roof — replace with your photo" class="w-full h-auto block">
+          </a>
+
+          <a href="https://placehold.co/1200x1000/2d4a2b/ffffff?text=Job+11" data-lightbox="gallery" data-lightbox-alt="Emergency night response — tree on driveway — replace with your photo" class="block rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+            <img src="https://placehold.co/600x500/2d4a2b/ffffff?text=Job+11" loading="lazy" alt="Emergency night response — tree on driveway — replace with your photo" class="w-full h-auto block">
+          </a>
+
+          <a href="https://placehold.co/1200x1400/2d4a2b/ffffff?text=Job+12" data-lightbox="gallery" data-lightbox-alt="Crew photo after a long job — replace with your photo" class="block rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+            <img src="https://placehold.co/600x700/2d4a2b/ffffff?text=Job+12" loading="lazy" alt="Crew photo after a long job — replace with your photo" class="w-full h-auto block">
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band" aria-label="Call to action">
+      <div class="container text-center">
+        <h2 class="text-white mb-3">Ready for results like these?</h2>
+        <p class="text-white/80 max-w-2xl mx-auto mb-6">Get a free on-site estimate and see what a professional crew looks like on your property.</p>
+        <a href="quote.html" class="btn-primary">Get a Free Quote</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-[var(--color-primary-dark)] text-white pt-16 pb-8 mt-0">
+    <div class="container">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div>
+          <div class="mb-4">
+            <span class="font-heading font-bold text-2xl text-white">[Your Company Name]</span>
+            <p class="text-[11px] tracking-wider uppercase mt-0.5" style="color: rgba(255,255,255,0.5);">Crews · Climbers · Cleanup</p>
+          </div>
+          <p class="text-sm leading-relaxed mb-5" style="color: rgba(255,255,255,0.65);">Expert tree removal, trimming, and emergency service for homeowners and businesses across [Service Region]. Locally owned, fully insured, and committed to leaving every job site cleaner than we found it.</p>
+          <p class="text-sm" style="color: rgba(255,255,255,0.5);">Licensed &amp; Insured · License #[License #]</p>
+        </div>
+        <div>
+          <p class="footer-heading">Quick Links</p>
+          <ul>
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="service-areas.html" class="footer-link">Service Areas</a></li>
+            <li><a href="gallery.html" class="footer-link">Gallery</a></li>
+            <li><a href="testimonials.html" class="footer-link">Reviews</a></li>
+            <li><a href="faq.html" class="footer-link">FAQ</a></li>
+            <li><a href="blog.html" class="footer-link">Blog</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Services</p>
+          <ul>
+            <li><a href="services.html#service-one" class="footer-link">Service One</a></li>
+            <li><a href="services.html#service-two" class="footer-link">Service Two</a></li>
+            <li><a href="services.html#service-three" class="footer-link">Service Three</a></li>
+            <li><a href="services.html#service-four" class="footer-link">Service Four</a></li>
+            <li><a href="services.html#service-five" class="footer-link">Service Five</a></li>
+            <li><a href="services.html#service-six" class="footer-link">Service Six</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Contact</p>
+          <div class="footer-contact-row">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.21 3.18 2 2 0 0 1 3.22 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16z"/></svg>
+            <a href="tel:[Phone Number]">[Phone Number]</a>
+          </div>
+          <div class="footer-contact-row">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:[Email Address]">[Email Address]</a>
+          </div>
+          <div class="footer-contact-row">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <address style="font-style: normal;">[Street Address]<br>[City], [State] [ZIP]</address>
+          </div>
+          <div class="footer-contact-row">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Mon–Sat 7am–6pm<br><span style="color: var(--color-accent);">24/7 Storm Response</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <a href="https://facebook.com/[your-page]" class="social-icon" aria-label="Follow us on Facebook" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://instagram.com/[your-handle]" class="social-icon" aria-label="Follow us on Instagram" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="https://www.google.com/maps?cid=[your-cid]" class="social-icon" aria-label="Find us on Google" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></a>
+        </div>
+        <p class="text-xs text-center" style="color: rgba(255,255,255,0.4);">&copy; [Year] [Your Company Name]. All rights reserved. &nbsp;·&nbsp; <a href="privacy.html" class="hover:text-white transition-colors">Privacy</a> &nbsp;·&nbsp; <a href="terms.html" class="hover:text-white transition-colors">Terms</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Visual-only filter pills (all images remain visible)
+    document.querySelectorAll('.filter-pill').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-pill').forEach(b => { b.classList.remove('is-active'); b.setAttribute('aria-selected','false'); });
+        btn.classList.add('is-active');
+        btn.setAttribute('aria-selected','true');
+      });
+    });
+  </script>
+</body>
+</html>

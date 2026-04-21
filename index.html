@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tree Removal &amp; Tree Service | [Your Company Name] — Tree Service in [City]</title>
+  <meta name="description" content="[Your Company Name] provides expert tree removal, trimming, stump grinding, and emergency storm cleanup in [City] and surrounding areas. Licensed, insured, free estimates.">
+  <link rel="canonical" href="https://yourdomain.com/index.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="[Your Company Name] — Expert Tree Service in [City]">
+  <meta property="og:description" content="Licensed and insured tree removal, trimming, and emergency services in [City]. Get your free on-site estimate today.">
+  <meta property="og:image" content="https://placehold.co/1200x630/2d4a2b/ffffff?text=Tree+Service">
+  <meta property="og:url" content="https://yourdomain.com/index.html">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="[Your Company Name] — Expert Tree Service in [City]">
+  <meta name="twitter:description" content="Licensed and insured tree removal, trimming, and emergency services in [City].">
+  <meta name="twitter:image" content="https://placehold.co/1200x630/2d4a2b/ffffff?text=Tree+Service">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary:        '#2d4a2b',
+            'primary-dark': '#1d3019',
+            'primary-light':'#4a7048',
+            accent:         '#e8772e',
+            'accent-dark':  '#c75c1c',
+            'text-muted':   '#4f5a4d',
+            'bg-alt':       '#f4f6f2',
+          },
+          fontFamily: {
+            heading: ['Oswald', 'sans-serif'],
+            body:    ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- LocalBusiness + BreadcrumbList JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://yourdomain.com/#business",
+        "name": "[Your Company Name]",
+        "url": "https://yourdomain.com",
+        "telephone": "[Phone Number]",
+        "email": "[Email Address]",
+        "image": "https://placehold.co/1200x630/2d4a2b/ffffff?text=Tree+Service",
+        "logo": "https://yourdomain.com/assets/images/logo.svg",
+        "description": "Licensed and insured tree removal, trimming, stump grinding, and emergency storm cleanup serving [Service Region].",
+        "priceRange": "$$",
+        "areaServed": "[Service Region]",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "[Street Address]",
+          "addressLocality": "[City]",
+          "addressRegion": "[State]",
+          "postalCode": "[ZIP]",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "[Latitude]",
+          "longitude": "[Longitude]"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+            "opens": "07:00",
+            "closes": "18:00"
+          }
+        ],
+        "sameAs": [
+          "https://www.facebook.com/[your-page]",
+          "https://www.instagram.com/[your-handle]",
+          "https://www.google.com/maps?cid=[your-cid]"
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://yourdomain.com/index.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Skip to Content -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- =====================================================================
+       HEADER (shared — copy exactly to every page)
+       ===================================================================== -->
+  <header class="site-header sticky top-0 z-40 bg-white border-b border-[var(--color-border)]">
+    <div class="container">
+      <div class="flex items-center justify-between h-16 gap-4">
+
+        <!-- Logo -->
+        <a href="index.html" class="flex flex-col leading-none shrink-0">
+          <span class="font-heading font-bold text-xl text-[var(--color-primary)]">[Your Company Name]</span>
+          <span class="text-[11px] tracking-wider uppercase text-[var(--color-text-muted)]">Crews · Climbers · Cleanup</span>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden lg:flex gap-6" aria-label="Primary navigation">
+          <a href="index.html"        class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors" aria-current="page">Home</a>
+          <a href="about.html"        class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors">About</a>
+          <a href="services.html"     class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors">Services</a>
+          <a href="service-areas.html"class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors">Service Areas</a>
+          <a href="gallery.html"      class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors">Gallery</a>
+          <a href="testimonials.html" class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors">Reviews</a>
+          <a href="faq.html"          class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors">FAQ</a>
+          <a href="blog.html"         class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors">Blog</a>
+          <a href="contact.html"      class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors">Contact</a>
+        </nav>
+
+        <!-- Right: Phone + CTA -->
+        <div class="flex items-center gap-3 shrink-0">
+          <a href="tel:[Phone Number]" class="hidden md:flex items-center gap-2 text-sm font-semibold text-[var(--color-primary)]" aria-label="Call us at [Phone Number]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.21 3.18 2 2 0 0 1 3.22 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16z"/></svg>
+            [Phone Number]
+          </a>
+          <a href="quote.html" class="btn-primary hidden md:inline-flex text-sm py-2.5 px-5">Get a Free Quote</a>
+
+          <!-- Hamburger -->
+          <button class="lg:hidden p-2 rounded-md text-[var(--color-text)]" aria-label="Toggle menu" aria-expanded="false" data-menu-toggle>
+            <svg data-icon-hamburger xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+            <svg data-icon-close class="hidden" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="lg:hidden hidden bg-white border-t border-[var(--color-border)]" aria-label="Mobile navigation">
+      <div class="container py-4">
+        <nav class="flex flex-col">
+          <a href="index.html"         class="mobile-nav-link" aria-current="page">Home</a>
+          <a href="about.html"         class="mobile-nav-link">About</a>
+          <a href="services.html"      class="mobile-nav-link">Services</a>
+          <a href="service-areas.html" class="mobile-nav-link">Service Areas</a>
+          <a href="gallery.html"       class="mobile-nav-link">Gallery</a>
+          <a href="testimonials.html"  class="mobile-nav-link">Reviews</a>
+          <a href="faq.html"           class="mobile-nav-link">FAQ</a>
+          <a href="blog.html"          class="mobile-nav-link">Blog</a>
+          <a href="contact.html"       class="mobile-nav-link">Contact</a>
+        </nav>
+        <div class="mt-4 flex flex-col gap-3">
+          <a href="tel:[Phone Number]" class="flex items-center gap-2 text-sm font-semibold text-[var(--color-primary)]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.21 3.18 2 2 0 0 1 3.22 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16z"/></svg>
+            [Phone Number]
+          </a>
+          <a href="quote.html" class="btn-primary text-center text-sm">Get a Free Quote</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- END HEADER -->
+
+  <!-- =====================================================================
+       MAIN CONTENT
+       ===================================================================== -->
+  <main id="main">
+
+    <!-- -------------------------------------------------------------------
+         HERO SECTION
+         ------------------------------------------------------------------- -->
+    <section class="hero-section" aria-label="Hero">
+      <div class="hero-bg" style="background-image: url('https://placehold.co/1920x1080/2d4a2b/ffffff?text=Tree+Removal+in+Progress');" role="img" aria-label="Tree removal crew working on a large oak — replace with your own job photo"></div>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content container py-16">
+        <div style="max-width: 720px;">
+          <p class="eyebrow mb-4">Trusted Local Tree Experts</p>
+          <h1 class="text-white mb-6">Strong Crews.<br>Safe Trees.<br>Clean Yards.</h1>
+          <p class="text-white/80 text-lg mb-8 max-w-xl leading-relaxed">
+            From single-tree removals to full land clearing, we handle every job safely, efficiently, and with zero mess left behind. Serving [Service Region] for over [XX] years.
+          </p>
+
+          <div class="flex flex-wrap gap-4 mb-12">
+            <a href="quote.html" class="btn-primary">Get a Free Quote</a>
+            <a href="tel:[Phone Number]" class="btn-secondary-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.21 3.18 2 2 0 0 1 3.22 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16z"/></svg>
+              Call [Phone Number]
+            </a>
+          </div>
+
+          <!-- Trust Strip -->
+          <div class="flex flex-wrap gap-x-6 gap-y-3">
+            <span class="trust-badge">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              BBB Accredited
+            </span>
+            <span class="trust-badge">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              5-Star Google Reviews
+            </span>
+            <span class="trust-badge">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              [XX]+ Years in Business
+            </span>
+            <span class="trust-badge">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Licensed &amp; Insured
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------------------------------------------------
+         STATS BAND
+         ------------------------------------------------------------------- -->
+    <section class="bg-[var(--color-bg-alt)] border-b border-[var(--color-border)] py-12" aria-label="Company statistics">
+      <div class="container">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+
+          <div class="stat-item">
+            <div class="stat-number">
+              <span data-count="15" data-count-suffix="+">0</span>
+            </div>
+            <p class="stat-label">Years in Business</p>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-number">
+              <span data-count="2400" data-count-suffix="+">0</span>
+            </div>
+            <p class="stat-label">Jobs Completed</p>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-number">
+              <span data-count="49" data-count-prefix="" data-count-suffix="">0</span><span class="text-3xl font-heading font-bold text-[var(--color-primary)]">/5 ★</span>
+            </div>
+            <p class="stat-label">Average Google Rating</p>
+          </div>
+
+          <div class="stat-item">
+            <div class="flex justify-center mb-1">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-[var(--color-primary)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <p class="stat-label font-semibold text-[var(--color-primary)]">Licensed &amp; Insured</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------------------------------------------------
+         SERVICES OVERVIEW
+         ------------------------------------------------------------------- -->
+    <section class="section-pad bg-white" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="text-center mb-12">
+          <p class="eyebrow mb-3">Our Expertise</p>
+          <h2 id="services-heading">What We Do</h2>
+          <p class="mt-4 max-w-2xl mx-auto">From routine trimming to full hazard removals, our trained crews handle every tree challenge safely and efficiently.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <!-- Service 1 -->
+          <article class="card p-6">
+            <div class="service-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8C8 10 5.9 16.17 3.82 19.17M2.13 13.5C5 16 8.5 18.5 12 18.5"/><path d="M12 18.5V22"/><path d="M12 2v7.5"/></svg>
+            </div>
+            <h3 class="mb-2">Tree Removal</h3>
+            <p class="text-sm mb-4">Safe, efficient removal of trees of any size — from tight residential yards to large commercial lots. We protect your property throughout the process.</p>
+            <a href="services.html#service-one" class="text-sm font-semibold text-[var(--color-accent)] hover:text-[var(--color-accent-dark)] transition-colors inline-flex items-center gap-1">
+              Learn More
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </article>
+
+          <!-- Service 2 -->
+          <article class="card p-6">
+            <div class="service-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+            <h3 class="mb-2">Tree Trimming &amp; Pruning</h3>
+            <p class="text-sm mb-4">Strategic trimming improves tree health, reduces storm risk, and keeps your yard looking sharp. Our ISA-trained climbers work at any height.</p>
+            <a href="services.html#service-two" class="text-sm font-semibold text-[var(--color-accent)] hover:text-[var(--color-accent-dark)] transition-colors inline-flex items-center gap-1">
+              Learn More
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </article>
+
+          <!-- Service 3 -->
+          <article class="card p-6">
+            <div class="service-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+            </div>
+            <h3 class="mb-2">Stump Grinding &amp; Removal</h3>
+            <p class="text-sm mb-4">Eliminate tripping hazards and reclaim your yard space. We grind stumps below grade and clean up all debris, leaving the area ready to replant.</p>
+            <a href="services.html#service-three" class="text-sm font-semibold text-[var(--color-accent)] hover:text-[var(--color-accent-dark)] transition-colors inline-flex items-center gap-1">
+              Learn More
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </article>
+
+          <!-- Service 4 -->
+          <article class="card p-6">
+            <div class="service-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5z"/><path d="M20.5 10H19V8.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/><path d="M9.5 14c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5S8 21.33 8 20.5v-5c0-.83.67-1.5 1.5-1.5z"/><path d="M3.5 14H5v1.5c0 .83-.67 1.5-1.5 1.5S2 16.33 2 15.5 2.67 14 3.5 14z"/><path d="M14 14.5c0-.83.67-1.5 1.5-1.5h5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-5c-.83 0-1.5-.67-1.5-1.5z"/><path d="M15.5 9H14v1.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5S16.33 9 15.5 9z"/><path d="M10 9.5c0 .83-.67 1.5-1.5 1.5h-5C2.67 11 2 10.33 2 9.5S2.67 8 3.5 8h5c.83 0 1.5.67 1.5 1.5z"/><path d="M8.5 15H10v-1.5c0-.83-.67-1.5-1.5-1.5S7 12.67 7 13.5 7.67 15 8.5 15z"/></svg>
+            </div>
+            <h3 class="mb-2">Storm Damage Cleanup</h3>
+            <p class="text-sm mb-4">Downed limbs and split trees are an emergency. Our crews respond quickly to restore safety and clear damage from your property after any storm.</p>
+            <a href="services.html#service-four" class="text-sm font-semibold text-[var(--color-accent)] hover:text-[var(--color-accent-dark)] transition-colors inline-flex items-center gap-1">
+              Learn More
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </article>
+
+          <!-- Service 5 -->
+          <article class="card p-6">
+            <div class="service-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="6" height="4"/><rect x="16" y="3" width="6" height="4"/><rect x="9" y="3" width="6" height="4"/><path d="M2 7v13h20V7"/><path d="M12 7v13"/></svg>
+            </div>
+            <h3 class="mb-2">Land Clearing</h3>
+            <p class="text-sm mb-4">Preparing a lot for construction or reclaiming overgrown acreage? We clear trees, brush, and debris with the right equipment for any scale of project.</p>
+            <a href="services.html#service-five" class="text-sm font-semibold text-[var(--color-accent)] hover:text-[var(--color-accent-dark)] transition-colors inline-flex items-center gap-1">
+              Learn More
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </article>
+
+          <!-- Service 6 -->
+          <article class="card p-6">
+            <div class="service-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            </div>
+            <h3 class="mb-2">Emergency Tree Service</h3>
+            <p class="text-sm mb-4">A fallen tree doesn't wait for business hours. We offer 24/7 emergency response for hazardous situations that need immediate attention.</p>
+            <a href="services.html#service-six" class="text-sm font-semibold text-[var(--color-accent)] hover:text-[var(--color-accent-dark)] transition-colors inline-flex items-center gap-1">
+              Learn More
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </article>
+
+        </div>
+
+        <div class="text-center mt-10">
+          <a href="services.html" class="btn-secondary">View All Services</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------------------------------------------------
+         WHY CHOOSE US
+         ------------------------------------------------------------------- -->
+    <section class="section-pad bg-[var(--color-bg-alt)]" aria-labelledby="why-heading">
+      <div class="container">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+          <!-- Left: text -->
+          <div>
+            <p class="eyebrow mb-3">Why Homeowners Choose Us</p>
+            <h2 id="why-heading" class="mb-5">Professional Tree Care You Can Count On</h2>
+            <p class="mb-8">We've built our reputation one yard at a time. Every crew member is trained, every job is insured, and every site is left cleaner than we found it. When you call us, you know exactly what you're getting.</p>
+
+            <ul class="checklist">
+              <li class="checklist-item">
+                <svg class="checklist-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Fully Insured &amp; Bonded — we carry full liability and workers' comp</span>
+              </li>
+              <li class="checklist-item">
+                <svg class="checklist-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Trained Climbers — certified arborists on every complex job</span>
+              </li>
+              <li class="checklist-item">
+                <svg class="checklist-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Cleanup Included — we haul away every branch, chip, and log</span>
+              </li>
+              <li class="checklist-item">
+                <svg class="checklist-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Free On-Site Estimates — no obligation, no pressure</span>
+              </li>
+              <li class="checklist-item">
+                <svg class="checklist-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Locally Owned &amp; Operated — invested in the communities we serve</span>
+              </li>
+            </ul>
+
+            <a href="about.html" class="btn-primary mt-8 inline-flex">Learn About Our Team</a>
+          </div>
+
+          <!-- Right: image -->
+          <div>
+            <img
+              src="https://placehold.co/800x600/2d4a2b/ffffff?text=Professional+Crew+on+Site"
+              alt="Tree removal crew with safety gear on a residential job — replace with your own photo"
+              class="rounded-xl shadow-lg w-full object-cover"
+              loading="lazy"
+              width="800"
+              height="600"
+            >
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------------------------------------------------
+         HOW IT WORKS
+         ------------------------------------------------------------------- -->
+    <section class="section-pad bg-white" aria-labelledby="howitworks-heading">
+      <div class="container">
+        <div class="text-center mb-12">
+          <p class="eyebrow mb-3">Simple Process</p>
+          <h2 id="howitworks-heading">How It Works</h2>
+          <p class="mt-4 max-w-xl mx-auto">Getting your tree work done is straightforward. Here's what to expect from first contact to finished job.</p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+          <div class="timeline-step relative">
+            <div class="timeline-number">1</div>
+            <div class="mb-3 flex justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-[var(--color-accent)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <h3 class="text-lg text-center mb-2">Assess</h3>
+            <p class="text-sm text-center">We visit your property, evaluate every tree in question, and identify the safest approach for the job.</p>
+            <div class="timeline-connector hidden lg:block"></div>
+          </div>
+
+          <div class="timeline-step relative">
+            <div class="timeline-number">2</div>
+            <div class="mb-3 flex justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-[var(--color-accent)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <h3 class="text-lg text-center mb-2">Plan</h3>
+            <p class="text-sm text-center">You receive a clear written estimate. We walk you through the plan, timeline, and any permits needed before anything starts.</p>
+            <div class="timeline-connector hidden lg:block"></div>
+          </div>
+
+          <div class="timeline-step relative">
+            <div class="timeline-number">3</div>
+            <div class="mb-3 flex justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-[var(--color-accent)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3 class="text-lg text-center mb-2">Remove</h3>
+            <p class="text-sm text-center">Our trained crew executes the job efficiently and safely, protecting your landscaping, fences, and structures throughout.</p>
+            <div class="timeline-connector hidden lg:block"></div>
+          </div>
+
+          <div class="timeline-step">
+            <div class="timeline-number">4</div>
+            <div class="mb-3 flex justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-[var(--color-accent)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <h3 class="text-lg text-center mb-2">Clean Up</h3>
+            <p class="text-sm text-center">Every log, chip, and branch is hauled away. We rake and blow the site until your yard looks exactly as we promised.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------------------------------------------------
+         CTA BAND
+         ------------------------------------------------------------------- -->
+    <section class="cta-band" aria-label="Call to action">
+      <div class="container max-w-2xl">
+        <h2 class="mb-4">Ready to Schedule Your Free Estimate?</h2>
+        <p class="mb-8 text-lg">No obligation. No pressure. Just an honest assessment of your trees and a clear, itemized quote — usually within 24 hours.</p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="quote.html" class="btn-primary">Request a Free Quote</a>
+          <a href="tel:[Phone Number]" class="btn-secondary-white">Call [Phone Number]</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------------------------------------------------
+         TESTIMONIALS
+         ------------------------------------------------------------------- -->
+    <section class="section-pad bg-[var(--color-bg-alt)]" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="text-center mb-10">
+          <p class="eyebrow mb-3">Customer Reviews</p>
+          <h2 id="testimonials-heading">What Our Clients Say</h2>
+        </div>
+
+        <div class="testimonials-scroll" role="list" aria-label="Customer testimonials">
+
+          <!-- Testimonial 1 -->
+          <article class="testimonial-card" role="listitem">
+            <svg class="testimonial-quote-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+            <div class="star-rating" aria-label="5 out of 5 stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <blockquote>
+              <p class="text-sm leading-relaxed">"They removed a massive oak that had been leaning toward our house for years. The crew arrived on time, worked fast, and left the yard spotless. I couldn't believe how smooth the whole process was. Highly recommend."</p>
+            </blockquote>
+            <footer class="flex items-center gap-3 mt-auto pt-4 border-t border-[var(--color-border)]">
+              <div class="reviewer-initials" aria-hidden="true">JM</div>
+              <div>
+                <p class="text-sm font-semibold text-[var(--color-text)]">Jennifer M.</p>
+                <p class="text-xs text-[var(--color-text-muted)]">[City One], [State]</p>
+              </div>
+            </footer>
+          </article>
+
+          <!-- Testimonial 2 -->
+          <article class="testimonial-card" role="listitem">
+            <svg class="testimonial-quote-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+            <div class="star-rating" aria-label="5 out of 5 stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <blockquote>
+              <p class="text-sm leading-relaxed">"After the storm took out two big pines, I called four companies. These guys were the only ones who came out the same day. Fair price, professional crew, and they cleaned everything up before dark. Will use again for sure."</p>
+            </blockquote>
+            <footer class="flex items-center gap-3 mt-auto pt-4 border-t border-[var(--color-border)]">
+              <div class="reviewer-initials" aria-hidden="true">RT</div>
+              <div>
+                <p class="text-sm font-semibold text-[var(--color-text)]">Robert T.</p>
+                <p class="text-xs text-[var(--color-text-muted)]">[City Two], [State]</p>
+              </div>
+            </footer>
+          </article>
+
+          <!-- Testimonial 3 -->
+          <article class="testimonial-card" role="listitem">
+            <svg class="testimonial-quote-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+            <div class="star-rating" aria-label="5 out of 5 stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <blockquote>
+              <p class="text-sm leading-relaxed">"I had three stumps ground down and the price was very reasonable. The technician explained everything beforehand and the result was perfect. My lawn already looks ten times better. Great local company."</p>
+            </blockquote>
+            <footer class="flex items-center gap-3 mt-auto pt-4 border-t border-[var(--color-border)]">
+              <div class="reviewer-initials" aria-hidden="true">SC</div>
+              <div>
+                <p class="text-sm font-semibold text-[var(--color-text)]">Sandra C.</p>
+                <p class="text-xs text-[var(--color-text-muted)]">[City Three], [State]</p>
+              </div>
+            </footer>
+          </article>
+
+        </div>
+
+        <div class="text-center mt-8">
+          <a href="testimonials.html" class="btn-secondary">Read All Reviews</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------------------------------------------------
+         SERVICE AREA TEASER
+         ------------------------------------------------------------------- -->
+    <section class="section-pad bg-white" aria-labelledby="areas-heading">
+      <div class="container">
+        <div class="text-center mb-10">
+          <p class="eyebrow mb-3">Coverage</p>
+          <h2 id="areas-heading">Proudly Serving [Service Region]</h2>
+          <p class="mt-4 max-w-xl mx-auto">Based in [City], our crews are on the road every day reaching homeowners and businesses across the region.</p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+          <!-- Map placeholder -->
+          <div>
+            <img
+              src="https://placehold.co/600x400/2d4a2b/ffffff?text=Service+Area+Map"
+              alt="Map showing [Your Company Name] service area across [Service Region] — replace with your Google Maps screenshot"
+              class="rounded-xl shadow-md w-full"
+              loading="lazy"
+              width="600"
+              height="400"
+            >
+          </div>
+
+          <!-- City list -->
+          <div>
+            <ul class="grid grid-cols-2 gap-3 mb-8">
+              <li class="flex items-center gap-2 text-sm font-medium">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-[var(--color-accent)] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <a href="service-areas.html#city-one" class="hover:text-[var(--color-primary)] transition-colors">[City One]</a>
+              </li>
+              <li class="flex items-center gap-2 text-sm font-medium">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-[var(--color-accent)] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <a href="service-areas.html#city-two" class="hover:text-[var(--color-primary)] transition-colors">[City Two]</a>
+              </li>
+              <li class="flex items-center gap-2 text-sm font-medium">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-[var(--color-accent)] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <a href="service-areas.html#city-three" class="hover:text-[var(--color-primary)] transition-colors">[City Three]</a>
+              </li>
+              <li class="flex items-center gap-2 text-sm font-medium">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-[var(--color-accent)] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <a href="service-areas.html#city-four" class="hover:text-[var(--color-primary)] transition-colors">[City Four]</a>
+              </li>
+              <li class="flex items-center gap-2 text-sm font-medium">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-[var(--color-accent)] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <a href="service-areas.html#city-five" class="hover:text-[var(--color-primary)] transition-colors">[City Five]</a>
+              </li>
+              <li class="flex items-center gap-2 text-sm font-medium">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-[var(--color-accent)] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <a href="service-areas.html#city-six" class="hover:text-[var(--color-primary)] transition-colors">[City Six]</a>
+              </li>
+              <li class="flex items-center gap-2 text-sm font-medium">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-[var(--color-accent)] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <a href="service-areas.html#city-seven" class="hover:text-[var(--color-primary)] transition-colors">[City Seven]</a>
+              </li>
+              <li class="flex items-center gap-2 text-sm font-medium">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-[var(--color-accent)] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <a href="service-areas.html#city-eight" class="hover:text-[var(--color-primary)] transition-colors">[City Eight]</a>
+              </li>
+            </ul>
+            <a href="service-areas.html" class="btn-secondary">See Full Service Area</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------------------------------------------------
+         RECENT BLOG POSTS
+         ------------------------------------------------------------------- -->
+    <section class="section-pad bg-[var(--color-bg-alt)]" aria-labelledby="blog-heading">
+      <div class="container">
+        <div class="text-center mb-10">
+          <p class="eyebrow mb-3">Tree Care Tips</p>
+          <h2 id="blog-heading">Recent from the Blog</h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+
+          <!-- Post 1 -->
+          <article class="card blog-card">
+            <a href="blog/post-1.html" aria-label="Read: When Is a Tree Too Dangerous to Keep?">
+              <img
+                src="https://placehold.co/800x450/2d4a2b/ffffff?text=Blog+Post+1"
+                alt="Arborist inspecting a tree with visible decay — replace with your article's featured photo"
+                loading="lazy"
+                width="800"
+                height="450"
+              >
+            </a>
+            <div class="blog-card-body">
+              <div class="blog-meta mb-3">
+                <time datetime="2026-03-15">March 15, 2026</time>
+                <span class="blog-meta-dot"></span>
+                <span>[Author Name]</span>
+              </div>
+              <h3 class="text-lg mb-2"><a href="blog/post-1.html" class="hover:text-[var(--color-primary)] transition-colors">When Is a Tree Too Dangerous to Keep?</a></h3>
+              <p class="text-sm mb-4">Learn the key warning signs — from leaning trunks to hollow centers — that tell you a tree poses a real risk to your home or family.</p>
+              <a href="blog/post-1.html" class="text-sm font-semibold text-[var(--color-accent)] hover:text-[var(--color-accent-dark)] transition-colors">Read Article →</a>
+            </div>
+          </article>
+
+          <!-- Post 2 -->
+          <article class="card blog-card">
+            <a href="blog/post-2.html" aria-label="Read: How Much Does Tree Removal Cost?">
+              <img
+                src="https://placehold.co/800x450/4a7048/ffffff?text=Blog+Post+2"
+                alt="Crew removing a large tree near a home — replace with your article's featured photo"
+                loading="lazy"
+                width="800"
+                height="450"
+              >
+            </a>
+            <div class="blog-card-body">
+              <div class="blog-meta mb-3">
+                <time datetime="2026-03-28">March 28, 2026</time>
+                <span class="blog-meta-dot"></span>
+                <span>[Author Name]</span>
+              </div>
+              <h3 class="text-lg mb-2"><a href="blog/post-2.html" class="hover:text-[var(--color-primary)] transition-colors">How Much Does Tree Removal Cost in [State]?</a></h3>
+              <p class="text-sm mb-4">A straightforward breakdown of what affects the price — tree size, location, access, and what you should ask any company before signing a quote.</p>
+              <a href="blog/post-2.html" class="text-sm font-semibold text-[var(--color-accent)] hover:text-[var(--color-accent-dark)] transition-colors">Read Article →</a>
+            </div>
+          </article>
+
+          <!-- Post 3 -->
+          <article class="card blog-card">
+            <a href="blog/post-3.html" aria-label="Read: 5 Pruning Mistakes That Harm Your Trees">
+              <img
+                src="https://placehold.co/800x450/1d3019/ffffff?text=Blog+Post+3"
+                alt="Incorrectly pruned tree with flush cuts — replace with your article's featured photo"
+                loading="lazy"
+                width="800"
+                height="450"
+              >
+            </a>
+            <div class="blog-card-body">
+              <div class="blog-meta mb-3">
+                <time datetime="2026-04-10">April 10, 2026</time>
+                <span class="blog-meta-dot"></span>
+                <span>[Author Name]</span>
+              </div>
+              <h3 class="text-lg mb-2"><a href="blog/post-3.html" class="hover:text-[var(--color-primary)] transition-colors">5 Pruning Mistakes Homeowners Make Every Year</a></h3>
+              <p class="text-sm mb-4">Over-pruning, wrong-season cuts, and flush cuts are just a few common errors that weaken trees over time. Here's what to avoid.</p>
+              <a href="blog/post-3.html" class="text-sm font-semibold text-[var(--color-accent)] hover:text-[var(--color-accent-dark)] transition-colors">Read Article →</a>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="text-center mt-8">
+          <a href="blog.html" class="btn-secondary">View All Posts</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------------------------------------------------
+         FINAL CTA BAND WITH EMBEDDED QUOTE FORM
+         ------------------------------------------------------------------- -->
+    <section class="bg-[var(--color-primary)] py-20 px-4" aria-labelledby="quote-form-heading">
+      <div class="container max-w-4xl">
+        <div class="grid lg:grid-cols-2 gap-12 items-start">
+
+          <!-- Left: copy -->
+          <div class="text-white">
+            <p class="eyebrow mb-4" style="color: var(--color-accent);">Get Started Today</p>
+            <h2 id="quote-form-heading" class="text-white mb-5">Request Your Free On-Site Estimate</h2>
+            <p style="color: rgba(255,255,255,0.75);" class="mb-8 text-lg leading-relaxed">Fill out the form and we'll reach out within one business day to schedule a convenient time. All estimates are free, written, and without obligation.</p>
+
+            <ul class="space-y-4">
+              <li class="flex items-center gap-3 text-white/80 text-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[var(--color-accent)] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Free on-site visit, no charge ever
+              </li>
+              <li class="flex items-center gap-3 text-white/80 text-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[var(--color-accent)] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Response within one business day
+              </li>
+              <li class="flex items-center gap-3 text-white/80 text-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[var(--color-accent)] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Written, itemized quote — no surprises
+              </li>
+              <li class="flex items-center gap-3 text-white/80 text-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[var(--color-accent)] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                24/7 emergency line available
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right: form -->
+          <div class="bg-white rounded-xl p-8 shadow-xl">
+            <!-- BUYER INSTRUCTIONS: Replace "YOUR_FORM_ID" below with your Formspree form ID (get one free at formspree.io).
+                 Alternatively, replace the entire action URL with your own endpoint, Zapier webhook, or GHL webhook URL. -->
+            <form data-validate action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+
+              <!-- Honeypot — leave blank; bots fill this, we discard the submission -->
+              <div class="form-honeypot" aria-hidden="true">
+                <label for="_gotcha">Leave this field empty</label>
+                <input type="text" name="_gotcha" id="_gotcha" tabindex="-1" autocomplete="off">
+              </div>
+
+              <div class="grid sm:grid-cols-2 gap-4 mb-4">
+                <div class="form-group">
+                  <label class="form-label" for="name">Full Name <span aria-hidden="true">*</span></label>
+                  <input class="form-input" type="text" id="name" name="name" placeholder="Jane Smith" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="phone">Phone Number <span aria-hidden="true">*</span></label>
+                  <input class="form-input" type="tel" id="phone" name="phone" placeholder="(555) 000-0000" required autocomplete="tel">
+                </div>
+              </div>
+
+              <div class="form-group mb-4">
+                <label class="form-label" for="email">Email Address <span aria-hidden="true">*</span></label>
+                <input class="form-input" type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email">
+              </div>
+
+              <div class="form-group mb-4">
+                <label class="form-label" for="service">Service Needed <span aria-hidden="true">*</span></label>
+                <select class="form-select" id="service" name="service" required>
+                  <option value="" disabled selected>Select a service…</option>
+                  <option value="tree-removal">Tree Removal</option>
+                  <option value="tree-trimming">Tree Trimming &amp; Pruning</option>
+                  <option value="stump-grinding">Stump Grinding</option>
+                  <option value="storm-cleanup">Storm Damage Cleanup</option>
+                  <option value="land-clearing">Land Clearing</option>
+                  <option value="emergency">Emergency Service</option>
+                </select>
+              </div>
+
+              <div class="form-group mb-6">
+                <label class="form-label" for="message">Tell Us About Your Project</label>
+                <textarea class="form-textarea" id="message" name="message" placeholder="Number of trees, rough size, access details, timeline…" rows="4"></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary w-full justify-center">Send My Request</button>
+            </form>
+
+            <div class="form-success hidden" role="alert">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 mx-auto mb-3 text-[var(--color-success)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              <p class="font-semibold text-lg mb-1">We got your request!</p>
+              <p class="text-sm text-[var(--color-text-muted)]">Someone from our team will reach out within one business day to schedule your free estimate.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <!-- END MAIN -->
+
+  <!-- =====================================================================
+       FOOTER (shared — copy exactly to every page)
+       ===================================================================== -->
+  <footer class="bg-[var(--color-primary-dark)] text-white pt-16 pb-8 mt-0">
+    <div class="container">
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+
+        <!-- Col 1: Brand -->
+        <div>
+          <div class="mb-4">
+            <span class="font-heading font-bold text-2xl text-white">[Your Company Name]</span>
+            <p class="text-[11px] tracking-wider uppercase mt-0.5" style="color: rgba(255,255,255,0.5);">Crews · Climbers · Cleanup</p>
+          </div>
+          <p class="text-sm leading-relaxed mb-5" style="color: rgba(255,255,255,0.65);">Expert tree removal, trimming, and emergency service for homeowners and businesses across [Service Region]. Locally owned, fully insured, and committed to leaving every job site cleaner than we found it.</p>
+          <p class="text-sm" style="color: rgba(255,255,255,0.5);">Licensed &amp; Insured · License #[License #]</p>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <p class="footer-heading">Quick Links</p>
+          <ul>
+            <li><a href="index.html"         class="footer-link">Home</a></li>
+            <li><a href="about.html"         class="footer-link">About Us</a></li>
+            <li><a href="services.html"      class="footer-link">Services</a></li>
+            <li><a href="service-areas.html" class="footer-link">Service Areas</a></li>
+            <li><a href="gallery.html"       class="footer-link">Gallery</a></li>
+            <li><a href="testimonials.html"  class="footer-link">Reviews</a></li>
+            <li><a href="faq.html"           class="footer-link">FAQ</a></li>
+            <li><a href="blog.html"          class="footer-link">Blog</a></li>
+            <li><a href="contact.html"       class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services -->
+        <div>
+          <p class="footer-heading">Services</p>
+          <ul>
+            <li><a href="services.html#service-one"   class="footer-link">Tree Removal</a></li>
+            <li><a href="services.html#service-two"   class="footer-link">Tree Trimming &amp; Pruning</a></li>
+            <li><a href="services.html#service-three" class="footer-link">Stump Grinding</a></li>
+            <li><a href="services.html#service-four"  class="footer-link">Storm Damage Cleanup</a></li>
+            <li><a href="services.html#service-five"  class="footer-link">Land Clearing</a></li>
+            <li><a href="services.html#service-six"   class="footer-link">Emergency Service</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact -->
+        <div>
+          <p class="footer-heading">Contact</p>
+
+          <div class="footer-contact-row">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.21 3.18 2 2 0 0 1 3.22 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16z"/></svg>
+            <a href="tel:[Phone Number]">[Phone Number]</a>
+          </div>
+
+          <div class="footer-contact-row">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:[Email Address]">[Email Address]</a>
+          </div>
+
+          <div class="footer-contact-row">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <address style="font-style: normal;">[Street Address]<br>[City], [State] [ZIP]</address>
+          </div>
+
+          <div class="footer-contact-row">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Mon–Sat 7am–6pm<br><span style="color: var(--color-accent);">24/7 Storm Response</span></span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Divider -->
+      <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+
+        <!-- Social Icons -->
+        <div class="flex items-center gap-3">
+          <a href="https://facebook.com/[your-page]" class="social-icon" aria-label="Follow us on Facebook" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://instagram.com/[your-handle]" class="social-icon" aria-label="Follow us on Instagram" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://www.google.com/maps?cid=[your-cid]" class="social-icon" aria-label="Find us on Google" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </a>
+        </div>
+
+        <!-- Legal -->
+        <p class="text-xs text-center" style="color: rgba(255,255,255,0.4);">
+          &copy; [Year] [Your Company Name]. All rights reserved.
+          &nbsp;·&nbsp;
+          <a href="privacy.html" class="hover:text-white transition-colors">Privacy</a>
+          &nbsp;·&nbsp;
+          <a href="terms.html" class="hover:text-white transition-colors">Terms</a>
+        </p>
+
+      </div>
+    </div>
+  </footer>
+  <!-- END FOOTER -->
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
