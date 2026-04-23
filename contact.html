@@ -10,7 +10,7 @@
   <!-- Open Graph -->
   <meta property="og:title" content="Contact [Your Company Name] — Tree Service in [City]">
   <meta property="og:description" content="Reach our team for questions, scheduling, or a free estimate. Available Mon–Fri 7am–6pm and 24/7 for storm emergencies.">
-  <meta property="og:image" content="https://placehold.co/1200x630/2d4a2b/ffffff?text=Contact+Us">
+  <meta property="og:image" content="https://yourdomain.com/assets/images/hero.jpg">
   <meta property="og:url" content="https://yourdomain.com/contact.html">
   <meta property="og:type" content="website">
 
@@ -18,7 +18,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Contact [Your Company Name] — Tree Service in [City]">
   <meta name="twitter:description" content="Reach our team for questions, scheduling, or a free estimate. Same-day response.">
-  <meta name="twitter:image" content="https://placehold.co/1200x630/2d4a2b/ffffff?text=Contact+Us">
+  <meta name="twitter:image" content="https://yourdomain.com/assets/images/hero.jpg">
 
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 
@@ -29,6 +29,7 @@
 
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config = { corePlugins: { preflight: false } }</script>
   <script>
     tailwind.config = {
       theme: {
@@ -159,7 +160,7 @@
          ------------------------------------------------------------------- -->
     <section class="page-hero" aria-label="Page header">
       <div
-        style="position:absolute;inset:0;background-image:url('https://placehold.co/1920x480/2d4a2b/ffffff?text=Contact+Us');background-size:cover;background-position:center;opacity:0.25;"
+        style="position:absolute;inset:0;background-image:url('assets/images/hero.jpg');background-size:cover;background-position:center;opacity:0.25;"
         role="img"
         aria-label="Arborist on job site — replace with a relevant photo"
       ></div>
@@ -398,8 +399,8 @@
 
         <!-- Visible map placeholder — replace with Google Maps embed iframe once ready -->
         <img
-          src="https://placehold.co/1600x500/2d4a2b/ffffff?text=Map+Placeholder"
-          alt="Placeholder map showing [Your Company Name] service area — replace with Google Maps embed"
+          src="assets/images/coverage-map.jpg"
+          alt="Metro coverage area map showing tree service radius across the service region"
           class="w-full h-96 object-cover rounded-xl"
           loading="lazy"
           width="1600"

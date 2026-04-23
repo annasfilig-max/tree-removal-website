@@ -10,7 +10,7 @@
   <!-- Open Graph -->
   <meta property="og:title" content="Service Areas | [Your Company Name] — Tree Service Across [Service Region]">
   <meta property="og:description" content="We serve homeowners and businesses throughout [Service Region]. Check if we cover your area and get a free quote from a locally owned tree service crew.">
-  <meta property="og:image" content="https://placehold.co/1200x630/2d4a2b/ffffff?text=Service+Areas">
+  <meta property="og:image" content="https://yourdomain.com/assets/images/hero.jpg">
   <meta property="og:url" content="https://yourdomain.com/service-areas.html">
   <meta property="og:type" content="website">
 
@@ -18,7 +18,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Service Areas | [Your Company Name] — [Service Region]">
   <meta name="twitter:description" content="Tree removal and trimming service across [Service Region]. Check your city and get a free estimate.">
-  <meta name="twitter:image" content="https://placehold.co/1200x630/2d4a2b/ffffff?text=Service+Areas">
+  <meta name="twitter:image" content="https://yourdomain.com/assets/images/hero.jpg">
 
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 
@@ -29,6 +29,7 @@
 
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config = { corePlugins: { preflight: false } }</script>
   <script>
     tailwind.config = {
       theme: {
@@ -159,7 +160,7 @@
          ------------------------------------------------------------------- -->
     <section class="page-hero" aria-label="Page header">
       <div
-        style="position:absolute;inset:0;background-image:url('https://placehold.co/1920x480/2d4a2b/ffffff?text=Service+Coverage+Map');background-size:cover;background-position:center;opacity:0.25;"
+        style="position:absolute;inset:0;background-image:url('assets/images/hero.jpg');background-size:cover;background-position:center;opacity:0.25;"
         role="img"
         aria-label="Aerial view of the service region — replace with a local aerial or map photo"
       ></div>
@@ -193,8 +194,8 @@
         <!-- Map placeholder -->
         <div class="max-w-5xl mx-auto">
           <img
-            src="https://placehold.co/1200x675/2d4a2b/ffffff?text=Service+Area+Map"
-            alt="Map showing the [Service Region] tree service coverage area — replace with an actual Google Maps embed or custom coverage map"
+            src="assets/images/coverage-map.jpg"
+            alt="Metro coverage area map showing tree service radius across the service region"
             class="rounded-xl shadow-lg w-full object-cover"
             loading="lazy"
             width="1200"
