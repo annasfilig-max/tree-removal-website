@@ -1,279 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gallery | [Your Company Name] — Tree Service in [City]</title>
-  <meta name="description" content="Browse photos of recent tree removal, trimming, stump grinding, and storm cleanup jobs completed by [Your Company Name] across [Service Region].">
-  <link rel="canonical" href="https://yourdomain.com/gallery.html">
-
-  <meta property="og:title" content="Gallery | [Your Company Name]">
-  <meta property="og:description" content="Photos of recent jobs — tree removal, trimming, stump grinding, and more.">
-  <meta property="og:image" content="https://yourdomain.com/assets/images/hero.jpg">
-  <meta property="og:url" content="https://yourdomain.com/gallery.html">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Gallery | [Your Company Name]">
-  <meta name="twitter:description" content="Photos of recent tree service jobs.">
-  <meta name="twitter:image" content="https://yourdomain.com/assets/images/hero.jpg">
-
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
-  <script src="https://cdn.tailwindcss.com"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery | [Your Company Name] — Remodeling in [City, State ZIP]</title>
+<meta name="description" content="A look at recent projects from [Your Company Name]. Big Oaks, baths, and whole-home remodels across homes in [Service Region].">
+<link rel="canonical" href="[https://yourdomain.com]/gallery.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Gallery | [Your Company Name]">
+<meta property="og:description" content="Recent Remodeling projects from [Your Company Name].">
+<meta property="og:url" content="[https://yourdomain.com]/gallery.html">
+<meta property="og:image" content="https://yourdomain.com/assets/images/hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="https://cdn.jsdelivr.net/gh/annasfilig-max/tree-removal-website@2e5de6e/assets/favicon.svg">
+<script src="https://cdn.tailwindcss.com"></script>
 <script>tailwind.config = { corePlugins: { preflight: false } }</script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#2d4a2b', 'primary-dark': '#1d3019', 'primary-light': '#4a7048',
-            accent: '#e8772e', 'accent-dark': '#c75c1c',
-            'text-muted': '#4f5a4d', 'bg-alt': '#f4f6f2',
-          },
-          fontFamily: { heading: ['Oswald','sans-serif'], body: ['Inter','sans-serif'] },
-        },
-      },
-    }
-  </script>
-
-  <link rel="stylesheet" href="assets/css/styles.css">
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {"@type":"ListItem","position":1,"name":"Home","item":"https://yourdomain.com/index.html"},
-      {"@type":"ListItem","position":2,"name":"Gallery","item":"https://yourdomain.com/gallery.html"}
-    ]
-  }
-  </script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/annasfilig-max/tree-removal-website@2e5de6e/assets/css/styles.css?v=22">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"[https://yourdomain.com]/index.html"},{"@type":"ListItem","position":2,"name":"Gallery","item":"[https://yourdomain.com]/gallery.html"}]}
+</script>
 </head>
 <body>
+<!-- ================= JT MARKETING PROMO BANNER ================= -->
+<div id="jtm-promo-banner" role="note" aria-label="Preview by JT Marketing">
+  <span class="jtm-promo-inner">
+    <svg class="jtm-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.6 6.3L21 9l-5 4.4L17.4 20 12 16.7 6.6 20 8 13.4 3 9l6.4-.7L12 2z"/></svg>
+    <span class="jtm-promo-text">This site could be yours.</span>
+    <span class="jtm-promo-sep" aria-hidden="true"></span>
+    <span class="jtm-promo-credit">Built by <b>JT Marketing</b></span>
+  </span>
+  <button type="button" class="jtm-close" aria-label="Dismiss" onclick="this.parentElement.style.display='none'">&times;</button>
+</div>
 
-  <a class="skip-link" href="#main">Skip to content</a>
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/home" class="logo" aria-label="[Your Company Name] home">
+      <span class="logo-name">[Your Company Name]</span>
+      <span class="logo-tag">Tree Removal &amp; Tree Care</span>
+    </a>
+    <nav class="nav-main" aria-label="Primary">
+      <ul><li><a href="/home">Home</a></li><li><a href="/about">About</a></li><li><a href="/services">Services</a></li><li><a href="/service-areas">Service Areas</a></li><li><a href="/gallery" aria-current="page">Gallery</a></li><li><a href="/testimonials">Reviews</a></li><li><a href="/faq">FAQ</a></li><li><a href="/contact">Contact</a></li></ul>
+    </nav>
+    <div class="header-cta">
+      <a href="tel:[Phone Number]" class="header-phone">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        [Phone Number]
+      </a>
+      <a href="/quote" class="btn btn-primary">Free Quote</a>
+    </div>
+    <button class="hamburger" data-menu-toggle aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
 
-  <header class="site-header sticky top-0 z-40 bg-white border-b border-[var(--color-border)]">
-    <div class="container">
-      <div class="flex items-center justify-between h-16 gap-4">
-        <a href="index.html" class="flex flex-col leading-none shrink-0">
-          <span class="font-heading font-bold text-xl text-[var(--color-primary)]">[Your Company Name]</span>
-          <span class="text-[11px] tracking-wider uppercase text-[var(--color-text-muted)]">Crews · Climbers · Cleanup</span>
-        </a>
-        <nav class="hidden lg:flex gap-6" aria-label="Primary navigation">
-          <a href="index.html" class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors">Home</a>
-          <a href="about.html" class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors">About</a>
-          <a href="services.html" class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors">Services</a>
-          <a href="service-areas.html" class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors">Service Areas</a>
-          <a href="gallery.html" class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors" aria-current="page">Gallery</a>
-          <a href="testimonials.html" class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors">Reviews</a>
-          <a href="faq.html" class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors">FAQ</a>
-          <a href="blog.html" class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors">Blog</a>
-          <a href="contact.html" class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors">Contact</a>
-        </nav>
-        <div class="flex items-center gap-3 shrink-0">
-          <a href="tel:[Phone Number]" class="hidden md:flex items-center gap-2 text-sm font-semibold text-[var(--color-primary)]" aria-label="Call us at [Phone Number]">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.21 3.18 2 2 0 0 1 3.22 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16z"/></svg>
-            [Phone Number]
-          </a>
-          <a href="quote.html" class="btn-primary hidden md:inline-flex text-sm py-2.5 px-5">Get a Free Quote</a>
-          <button class="lg:hidden p-2 rounded-md text-[var(--color-text)]" aria-label="Toggle menu" aria-expanded="false" data-menu-toggle>
-            <svg data-icon-hamburger xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-            <svg data-icon-close class="hidden" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-          </button>
-        </div>
+<!-- ================= MOBILE MENU ================= -->
+<div class="mobile-menu" id="mobile-menu" data-mobile-menu aria-hidden="true">
+  <div class="mobile-menu-head">
+    <span class="logo-name">[Your Company Name]</span>
+    <button class="hamburger" data-menu-close aria-label="Close menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <nav aria-label="Mobile primary"><ul><li><a href="/home">Home</a></li><li><a href="/about">About</a></li><li><a href="/services">Services</a></li><li><a href="/service-areas">Service Areas</a></li><li><a href="/gallery">Gallery</a></li><li><a href="/testimonials">Reviews</a></li><li><a href="/faq">FAQ</a></li><li><a href="/contact">Contact</a></li></ul></nav>
+  <div class="mobile-menu-footer">
+    <a href="tel:[Phone Number]" class="btn btn-outline-white">Call [Phone Number]</a>
+    <a href="/quote" class="btn btn-primary">Free Quote</a>
+  </div>
+</div>
+
+<main id="main">
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="/home">Home</a> &nbsp;/&nbsp; Gallery</div>
+    <h1>The<br><em style="color:var(--orange);font-style:normal;">Work.</em></h1>
+    <p style="color:rgba(255,255,255,0.78);max-width:580px;margin:1rem 0 0;font-size:1.0625rem;">Recent installs, repairs, and upgrades from the crew. The kind of work that doesn't need a filter.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="sec-head">
+      <span class="idx">01 / Recent Jobs</span>
+      <h2>Real Work,<br>Real Homes.</h2>
+      <span class="meta">Tap Any Photo</span>
+    </div>
+    <div class="gallery-filters" role="tablist" aria-label="Gallery category filters">
+      <button class="active" role="tab">All</button>
+      <button role="tab">Big Oaks</button>
+      <button role="tab">Baths</button>
+      <button role="tab">Crane Lift</button>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item tall"><img src="https://cdn.jsdelivr.net/gh/annasfilig-max/tree-removal-website@2e5de6e/assets/images/gallery-1.jpg" alt="Big Oak before and after — full remodel"></div>
+      <div class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/annasfilig-max/tree-removal-website@2e5de6e/assets/images/gallery-2.jpg" alt="Clean tile line-up along shower wall"></div>
+      <div class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/annasfilig-max/tree-removal-website@2e5de6e/assets/images/gallery-3.jpg" alt="Custom cabinetry install with labeled hardware"></div>
+      <div class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/annasfilig-max/tree-removal-website@2e5de6e/assets/images/gallery-4.jpg" alt="Modern primary bath with floating vanity"></div>
+      <div class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/annasfilig-max/tree-removal-website@2e5de6e/assets/images/gallery-5.jpg" alt="Designer reviewing tile selection on site"></div>
+      <div class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/annasfilig-max/tree-removal-website@2e5de6e/assets/images/gallery-6.jpg" alt="Crew loading materials at job site"></div>
+      <div class="gallery-item tall"><img src="https://cdn.jsdelivr.net/gh/annasfilig-max/tree-removal-website@2e5de6e/assets/images/gallery-7.jpg" alt="Close-up of installer hands on quartz template"></div>
+      <div class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/annasfilig-max/tree-removal-website@2e5de6e/assets/images/gallery-8.jpg" alt="Completed kitchen island with tools on site"></div>
+      <div class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/annasfilig-max/tree-removal-website@2e5de6e/assets/images/gallery-9.jpg" alt="Materials selection binder and project plans"></div>
+      <div class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/annasfilig-max/tree-removal-website@2e5de6e/assets/images/gallery-10.jpg" alt="Designer measuring built-in shelving"></div>
+      <div class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/annasfilig-max/tree-removal-website@2e5de6e/assets/images/gallery-11.jpg" alt="Fleet of Nano Banana Remodeling service vans in neighborhood"></div>
+      <div class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/annasfilig-max/tree-removal-website@2e5de6e/assets/images/gallery-12.jpg" alt="Project trucks heading to a job site"></div>
+    </div>
+  </div>
+</section>
+
+<div class="lightbox" data-lightbox aria-hidden="true" role="dialog" aria-label="Gallery image viewer">
+  <button class="lightbox-close" data-lb-close aria-label="Close"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <button class="lightbox-nav prev" data-lb-prev aria-label="Previous image"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg></button>
+  <img src="" alt="">
+  <button class="lightbox-nav next" data-lb-next aria-label="Next image"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></button>
+</div>
+
+<section class="cta-band">
+  <div class="container">
+    <div>
+      <span class="eyebrow" style="color:var(--orange);">02 / Yours Could Be Next</span>
+      <h2>Want Yours To<br>Look Like This?</h2>
+      <p>Book a free in-home estimate and we'll show you what's possible &mdash; no pressure, no upsell.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:0.875rem;">
+      <a href="/quote" class="btn btn-primary btn-lg">Get a Free Quote</a>
+      <a href="tel:[Phone Number]" class="btn btn-outline-white btn-lg">Call [Phone Number]</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo-name">[Your Company Name]</div>
+        <div class="logo-tag">Tree Removal &amp; Tree Care</div>
+        <p style="margin-top:1rem;color:rgba(255,255,255,0.7);max-width:36ch;">Family-owned remodeling company serving [Service Region] since [Year Founded]. Honest work, fair pricing, and a guarantee behind every job.</p>
+        <p style="font-family:var(--font-mono);font-size:0.6875rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-top:1rem;">Lic #[License #] &middot; Insured &middot; Bonded</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="/home">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/service-areas">Service Areas</a></li>
+          <li><a href="/gallery">Gallery</a></li>
+          <li><a href="/testimonials">Reviews</a></li>
+          <li><a href="/faq">FAQ</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="/services#removal">Big Oak Remodels</a></li>
+          <li><a href="/services#trimming">Tree Trimming</a></li>
+          <li><a href="/services#stump">Stump Grinding</a></li>
+          <li><a href="/services#emergency">Storm Cleanup &amp; Surfaces</a></li>
+          <li><a href="/services#clearing">Stump Grind &amp; Stone</a></li>
+          <li><a href="/services#crane">Crane Removal</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Reach Us</h4>
+        <ul>
+          <li><a href="tel:[Phone Number]" style="font-family:var(--font-heading);font-weight:700;color:#fff;font-size:1.125rem;">[Phone Number]</a></li>
+          <li><a href="mailto:[Email]">[Email]</a></li>
+          <li>[Street Address]<br>[City, State ZIP]</li>
+          <li style="margin-top:0.75rem;font-family:var(--font-mono);font-size:0.6875rem;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.6);">Mon&ndash;Fri 7a&ndash;7p &middot; Sat 8a&ndash;4p<br>15-Yr Workmanship Dispatch</li>
+        </ul>
       </div>
     </div>
-    <div id="mobile-menu" class="lg:hidden hidden bg-white border-t border-[var(--color-border)]" aria-label="Mobile navigation">
-      <div class="container py-4">
-        <nav class="flex flex-col">
-          <a href="index.html" class="mobile-nav-link">Home</a>
-          <a href="about.html" class="mobile-nav-link">About</a>
-          <a href="services.html" class="mobile-nav-link">Services</a>
-          <a href="service-areas.html" class="mobile-nav-link">Service Areas</a>
-          <a href="gallery.html" class="mobile-nav-link" aria-current="page">Gallery</a>
-          <a href="testimonials.html" class="mobile-nav-link">Reviews</a>
-          <a href="faq.html" class="mobile-nav-link">FAQ</a>
-          <a href="blog.html" class="mobile-nav-link">Blog</a>
-          <a href="contact.html" class="mobile-nav-link">Contact</a>
-        </nav>
-        <div class="mt-4 flex flex-col gap-3">
-          <a href="tel:[Phone Number]" class="flex items-center gap-2 text-sm font-semibold text-[var(--color-primary)]">[Phone Number]</a>
-          <a href="quote.html" class="btn-primary text-center text-sm">Get a Free Quote</a>
-        </div>
+    <div class="footer-bottom">
+      <div class="social-row">
+        <a href="#" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+        <a href="#" aria-label="Google"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22 11h-10v2.5h5.7c-.5 2.8-2.8 4.5-5.7 4.5-3.4 0-6.2-2.8-6.2-6.2s2.8-6.2 6.2-6.2c1.5 0 2.9.6 4 1.5l1.9-1.9C16 3.6 14.1 3 12 3 7 3 3 7 3 12s4 9 9 9c5.2 0 8.7-3.6 8.7-8.7 0-.4 0-.9-.1-1.3z"/></svg></a>
       </div>
+      <div>&copy; <span data-year>2026</span> [Your Company Name] &middot; <a href="/privacy">Privacy</a> &middot; <a href="/terms">Terms</a></div>
     </div>
-  </header>
+  </div>
+</footer>
 
-  <main id="main">
-
-    <section class="page-hero" aria-label="Page header">
-      <div style="position:absolute;inset:0;background-image:url('assets/images/hero.jpg');background-size:cover;background-position:center;opacity:0.25;" role="img" aria-label="Arborist crew completing a tree removal project"></div>
-      <div style="position:relative;z-index:1;">
-        <nav class="breadcrumb mb-4" aria-label="Breadcrumb">
-          <a href="index.html">Home</a>
-          <span class="breadcrumb-sep" aria-hidden="true">›</span>
-          <span aria-current="page">Gallery</span>
-        </nav>
-        <h1>Our Work</h1>
-        <p class="mt-3 max-w-xl mx-auto text-white/75 text-lg">Every photo here is a real job — tree removed, yard cleaned, homeowner happy.</p>
-      </div>
-    </section>
-
-    <section class="section-pad bg-white" aria-label="Gallery filters">
-      <div class="container">
-        <div class="flex flex-wrap justify-center gap-2 mb-10" role="tablist" aria-label="Filter gallery">
-          <button type="button" class="filter-pill is-active" data-filter="all" role="tab" aria-selected="true">All Jobs</button>
-          <button type="button" class="filter-pill" data-filter="service-one" role="tab" aria-selected="false">Service One</button>
-          <button type="button" class="filter-pill" data-filter="service-two" role="tab" aria-selected="false">Service Two</button>
-          <button type="button" class="filter-pill" data-filter="service-three" role="tab" aria-selected="false">Service Three</button>
-        </div>
-
-        <div class="columns-1 sm:columns-2 lg:columns-3 gap-4 [&>*]:mb-4 [&>*]:break-inside-avoid">
-
-          <a href="assets/images/gallery-1.jpg" data-lightbox="gallery" data-lightbox-alt="Tree removal project completed in residential yard" class="block rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
-            <img src="assets/images/gallery-1.jpg" loading="lazy" alt="Tree removal project completed in residential yard" class="w-full h-auto block">
-          </a>
-
-          <a href="assets/images/gallery-2.jpg" data-lightbox="gallery" data-lightbox-alt="Arborist climbing and pruning large oak tree" class="block rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
-            <img src="assets/images/gallery-2.jpg" loading="lazy" alt="Arborist climbing and pruning large oak tree" class="w-full h-auto block">
-          </a>
-
-          <a href="assets/images/gallery-3.jpg" data-lightbox="gallery" data-lightbox-alt="Stump grinding equipment at work in backyard" class="block rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
-            <img src="assets/images/gallery-3.jpg" loading="lazy" alt="Stump grinding equipment at work in backyard" class="w-full h-auto block">
-          </a>
-
-          <a href="assets/images/gallery-4.jpg" data-lightbox="gallery" data-lightbox-alt="Storm damage cleanup after fallen tree on property" class="block rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
-            <img src="assets/images/gallery-4.jpg" loading="lazy" alt="Storm damage cleanup after fallen tree on property" class="w-full h-auto block">
-          </a>
-
-          <a href="assets/images/gallery-5.jpg" data-lightbox="gallery" data-lightbox-alt="Crew safely lowering large limb using rigging system" class="block rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
-            <img src="assets/images/gallery-5.jpg" loading="lazy" alt="Crew safely lowering large limb using rigging system" class="w-full h-auto block">
-          </a>
-
-          <a href="assets/images/gallery-6.jpg" data-lightbox="gallery" data-lightbox-alt="Hazardous leaning tree before removal" class="block rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
-            <img src="assets/images/gallery-6.jpg" loading="lazy" alt="Hazardous leaning tree before removal" class="w-full h-auto block">
-          </a>
-
-          <a href="assets/images/gallery-7.jpg" data-lightbox="gallery" data-lightbox-alt="Clean residential yard after tree removal completed" class="block rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
-            <img src="assets/images/gallery-7.jpg" loading="lazy" alt="Clean residential yard after tree removal completed" class="w-full h-auto block">
-          </a>
-
-          <a href="assets/images/gallery-8.jpg" data-lightbox="gallery" data-lightbox-alt="Bucket truck reaching over house for tree trimming" class="block rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
-            <img src="assets/images/gallery-8.jpg" loading="lazy" alt="Bucket truck reaching over house for tree trimming" class="w-full h-auto block">
-          </a>
-
-          <a href="assets/images/gallery-9.jpg" data-lightbox="gallery" data-lightbox-alt="Lot clearing in progress for new residential construction" class="block rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
-            <img src="assets/images/gallery-9.jpg" loading="lazy" alt="Lot clearing in progress for new residential construction" class="w-full h-auto block">
-          </a>
-
-          <a href="assets/images/gallery-10.jpg" data-lightbox="gallery" data-lightbox-alt="Branches trimmed away from roof line for clearance" class="block rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
-            <img src="assets/images/gallery-10.jpg" loading="lazy" alt="Branches trimmed away from roof line for clearance" class="w-full h-auto block">
-          </a>
-
-          <a href="assets/images/gallery-11.jpg" data-lightbox="gallery" data-lightbox-alt="Emergency response — tree blocking driveway after storm" class="block rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
-            <img src="assets/images/gallery-11.jpg" loading="lazy" alt="Emergency response — tree blocking driveway after storm" class="w-full h-auto block">
-          </a>
-
-          <a href="assets/images/gallery-12.jpg" data-lightbox="gallery" data-lightbox-alt="Tree service crew after completing a large residential job" class="block rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
-            <img src="assets/images/gallery-12.jpg" loading="lazy" alt="Tree service crew after completing a large residential job" class="w-full h-auto block">
-          </a>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="cta-band" aria-label="Call to action">
-      <div class="container text-center">
-        <h2 class="text-white mb-3">Ready for results like these?</h2>
-        <p class="text-white/80 max-w-2xl mx-auto mb-6">Get a free on-site estimate and see what a professional crew looks like on your property.</p>
-        <a href="quote.html" class="btn-primary">Get a Free Quote</a>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="bg-[var(--color-primary-dark)] text-white pt-16 pb-8 mt-0">
-    <div class="container">
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
-        <div>
-          <div class="mb-4">
-            <span class="font-heading font-bold text-2xl text-white">[Your Company Name]</span>
-            <p class="text-[11px] tracking-wider uppercase mt-0.5" style="color: rgba(255,255,255,0.5);">Crews · Climbers · Cleanup</p>
-          </div>
-          <p class="text-sm leading-relaxed mb-5" style="color: rgba(255,255,255,0.65);">Expert tree removal, trimming, and emergency service for homeowners and businesses across [Service Region]. Locally owned, fully insured, and committed to leaving every job site cleaner than we found it.</p>
-          <p class="text-sm" style="color: rgba(255,255,255,0.5);">Licensed &amp; Insured · License #[License #]</p>
-        </div>
-        <div>
-          <p class="footer-heading">Quick Links</p>
-          <ul>
-            <li><a href="index.html" class="footer-link">Home</a></li>
-            <li><a href="about.html" class="footer-link">About Us</a></li>
-            <li><a href="services.html" class="footer-link">Services</a></li>
-            <li><a href="service-areas.html" class="footer-link">Service Areas</a></li>
-            <li><a href="gallery.html" class="footer-link">Gallery</a></li>
-            <li><a href="testimonials.html" class="footer-link">Reviews</a></li>
-            <li><a href="faq.html" class="footer-link">FAQ</a></li>
-            <li><a href="blog.html" class="footer-link">Blog</a></li>
-            <li><a href="contact.html" class="footer-link">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <p class="footer-heading">Services</p>
-          <ul>
-            <li><a href="services.html#service-one" class="footer-link">Service One</a></li>
-            <li><a href="services.html#service-two" class="footer-link">Service Two</a></li>
-            <li><a href="services.html#service-three" class="footer-link">Service Three</a></li>
-            <li><a href="services.html#service-four" class="footer-link">Service Four</a></li>
-            <li><a href="services.html#service-five" class="footer-link">Service Five</a></li>
-            <li><a href="services.html#service-six" class="footer-link">Service Six</a></li>
-          </ul>
-        </div>
-        <div>
-          <p class="footer-heading">Contact</p>
-          <div class="footer-contact-row">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.21 3.18 2 2 0 0 1 3.22 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16z"/></svg>
-            <a href="tel:[Phone Number]">[Phone Number]</a>
-          </div>
-          <div class="footer-contact-row">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <a href="mailto:[Email Address]">[Email Address]</a>
-          </div>
-          <div class="footer-contact-row">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <address style="font-style: normal;">[Street Address]<br>[City], [State] [ZIP]</address>
-          </div>
-          <div class="footer-contact-row">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            <span>Mon–Sat 7am–6pm<br><span style="color: var(--color-accent);">24/7 Storm Response</span></span>
-          </div>
-        </div>
-      </div>
-      <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <div class="flex items-center gap-3">
-          <a href="https://facebook.com/[your-page]" class="social-icon" aria-label="Follow us on Facebook" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
-          <a href="https://instagram.com/[your-handle]" class="social-icon" aria-label="Follow us on Instagram" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-          <a href="https://www.google.com/maps?cid=[your-cid]" class="social-icon" aria-label="Find us on Google" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></a>
-        </div>
-        <p class="text-xs text-center" style="color: rgba(255,255,255,0.4);">&copy; [Year] [Your Company Name]. All rights reserved. &nbsp;·&nbsp; <a href="privacy.html" class="hover:text-white transition-colors">Privacy</a> &nbsp;·&nbsp; <a href="terms.html" class="hover:text-white transition-colors">Terms</a></p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="assets/js/main.js"></script>
-  <script>
-    // Visual-only filter pills (all images remain visible)
-    document.querySelectorAll('.filter-pill').forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('.filter-pill').forEach(b => { b.classList.remove('is-active'); b.setAttribute('aria-selected','false'); });
-        btn.classList.add('is-active');
-        btn.setAttribute('aria-selected','true');
-      });
-    });
-  </script>
+<script src="https://cdn.jsdelivr.net/gh/annasfilig-max/tree-removal-website@2e5de6e/assets/js/main.js?v=22" defer></script>
 </body>
 </html>

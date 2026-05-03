@@ -1,703 +1,418 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Services | [Your Company Name] — Tree Service in [City]</title>
-  <meta name="description" content="[Your Company Name] offers tree removal, trimming, stump grinding, storm cleanup, land clearing, and 24/7 emergency service in [City]. Licensed, insured, free estimates.">
-  <link rel="canonical" href="https://yourdomain.com/services.html">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Tree Services | [Your Company Name] — [City]">
-  <meta property="og:description" content="Full-service tree care in [City]: removal, trimming, stump grinding, storm response, land clearing, and emergency service. Get a free quote today.">
-  <meta property="og:image" content="https://yourdomain.com/assets/images/hero.jpg">
-  <meta property="og:url" content="https://yourdomain.com/services.html">
-  <meta property="og:type" content="website">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Tree Services | [Your Company Name] — [City]">
-  <meta name="twitter:description" content="Tree removal, trimming, stump grinding, storm cleanup, and more in [City]. Licensed and insured.">
-  <meta name="twitter:image" content="https://yourdomain.com/assets/images/hero.jpg">
-
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services | [Your Company Name] — Remodeling in [City, State ZIP]</title>
+<meta name="description" content="Full-service Remodeling work for homes across [Service Region]. Six core services from [Your Company Name] — upfront pricing and a workmanship guarantee on every job.">
+<link rel="canonical" href="[https://yourdomain.com]/services.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Services | [Your Company Name]">
+<meta property="og:description" content="Six core Remodeling services with upfront pricing and workmanship guaranteed.">
+<meta property="og:url" content="[https://yourdomain.com]/services.html">
+<meta property="og:image" content="https://yourdomain.com/assets/images/hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="https://cdn.jsdelivr.net/gh/annasfilig-max/tree-removal-website@2e5de6e/assets/favicon.svg">
+<script src="https://cdn.tailwindcss.com"></script>
 <script>tailwind.config = { corePlugins: { preflight: false } }</script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary:        '#2d4a2b',
-            'primary-dark': '#1d3019',
-            'primary-light':'#4a7048',
-            accent:         '#e8772e',
-            'accent-dark':  '#c75c1c',
-            'text-muted':   '#4f5a4d',
-            'bg-alt':       '#f4f6f2',
-          },
-          fontFamily: {
-            heading: ['Oswald', 'sans-serif'],
-            body:    ['Inter', 'sans-serif'],
-          },
-        },
-      },
-    }
-  </script>
-
-  <link rel="stylesheet" href="assets/css/styles.css">
-
-  <!-- BreadcrumbList + Service JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://yourdomain.com/index.html"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Services",
-            "item": "https://yourdomain.com/services.html"
-          }
-        ]
-      },
-      {
-        "@type": "Service",
-        "@id": "https://yourdomain.com/services.html#service-one",
-        "name": "Tree Removal",
-        "description": "Safe, efficient removal of dead, damaged, or unwanted trees of any size from residential and commercial properties.",
-        "provider": { "@type": "LocalBusiness", "name": "[Your Company Name]" },
-        "areaServed": "[Service Region]"
-      },
-      {
-        "@type": "Service",
-        "@id": "https://yourdomain.com/services.html#service-two",
-        "name": "Tree Trimming & Pruning",
-        "description": "Professional trimming and pruning to improve tree health, shape, and clearance from structures and utility lines.",
-        "provider": { "@type": "LocalBusiness", "name": "[Your Company Name]" },
-        "areaServed": "[Service Region]"
-      },
-      {
-        "@type": "Service",
-        "@id": "https://yourdomain.com/services.html#service-three",
-        "name": "Stump Grinding",
-        "description": "Complete stump removal using professional grinding equipment, leaving the area level and ready for replanting or landscaping.",
-        "provider": { "@type": "LocalBusiness", "name": "[Your Company Name]" },
-        "areaServed": "[Service Region]"
-      },
-      {
-        "@type": "Service",
-        "@id": "https://yourdomain.com/services.html#service-four",
-        "name": "Storm Damage Cleanup",
-        "description": "Rapid response to storm-damaged trees — fallen limbs, split trunks, and downed debris cleared safely and quickly.",
-        "provider": { "@type": "LocalBusiness", "name": "[Your Company Name]" },
-        "areaServed": "[Service Region]"
-      },
-      {
-        "@type": "Service",
-        "@id": "https://yourdomain.com/services.html#service-five",
-        "name": "Land Clearing",
-        "description": "Full lot and acreage clearing for new construction, landscaping projects, or overgrown property reclamation.",
-        "provider": { "@type": "LocalBusiness", "name": "[Your Company Name]" },
-        "areaServed": "[Service Region]"
-      },
-      {
-        "@type": "Service",
-        "@id": "https://yourdomain.com/services.html#service-six",
-        "name": "Emergency Tree Service",
-        "description": "24/7 emergency response for trees threatening structures, vehicles, or blocking roads after storms or unexpected failures.",
-        "provider": { "@type": "LocalBusiness", "name": "[Your Company Name]" },
-        "areaServed": "[Service Region]"
-      }
-    ]
-  }
-  </script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/annasfilig-max/tree-removal-website@2e5de6e/assets/css/styles.css?v=22">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+  {"@type":"ListItem","position":1,"name":"Home","item":"[https://yourdomain.com]/index.html"},
+  {"@type":"ListItem","position":2,"name":"Services","item":"[https://yourdomain.com]/services.html"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+  {"@type":"Service","serviceType":"Service One","provider":{"@type":"LocalBusiness","name":"[Your Company Name]"},"areaServed":"[Service Region]"},
+  {"@type":"Service","serviceType":"Service Two","provider":{"@type":"LocalBusiness","name":"[Your Company Name]"},"areaServed":"[Service Region]"},
+  {"@type":"Service","serviceType":"Service Three","provider":{"@type":"LocalBusiness","name":"[Your Company Name]"},"areaServed":"[Service Region]"},
+  {"@type":"Service","serviceType":"Service Four","provider":{"@type":"LocalBusiness","name":"[Your Company Name]"},"areaServed":"[Service Region]"},
+  {"@type":"Service","serviceType":"Service Five","provider":{"@type":"LocalBusiness","name":"[Your Company Name]"},"areaServed":"[Service Region]"},
+  {"@type":"Service","serviceType":"Service Six","provider":{"@type":"LocalBusiness","name":"[Your Company Name]"},"areaServed":"[Service Region]"}
+]}
+</script>
 </head>
 <body>
+<!-- ================= JT MARKETING PROMO BANNER ================= -->
+<div id="jtm-promo-banner" role="note" aria-label="Preview by JT Marketing">
+  <span class="jtm-promo-inner">
+    <svg class="jtm-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.6 6.3L21 9l-5 4.4L17.4 20 12 16.7 6.6 20 8 13.4 3 9l6.4-.7L12 2z"/></svg>
+    <span class="jtm-promo-text">This site could be yours.</span>
+    <span class="jtm-promo-sep" aria-hidden="true"></span>
+    <span class="jtm-promo-credit">Built by <b>JT Marketing</b></span>
+  </span>
+  <button type="button" class="jtm-close" aria-label="Dismiss" onclick="this.parentElement.style.display='none'">&times;</button>
+</div>
 
-  <!-- Skip to Content -->
-  <a class="skip-link" href="#main">Skip to content</a>
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/home" class="logo" aria-label="[Your Company Name] home">
+      <span class="logo-name">[Your Company Name]</span>
+      <span class="logo-tag">Tree Removal &amp; Tree Care</span>
+    </a>
+    <nav class="nav-main" aria-label="Primary">
+      <ul><li><a href="/home">Home</a></li><li><a href="/about">About</a></li><li><a href="/services" aria-current="page">Services</a></li><li><a href="/service-areas">Service Areas</a></li><li><a href="/gallery">Gallery</a></li><li><a href="/testimonials">Reviews</a></li><li><a href="/faq">FAQ</a></li><li><a href="/contact">Contact</a></li></ul>
+    </nav>
+    <div class="header-cta">
+      <a href="tel:[Phone Number]" class="header-phone">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        [Phone Number]
+      </a>
+      <a href="/quote" class="btn btn-primary">Free Quote</a>
+    </div>
+    <button class="hamburger" data-menu-toggle aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
 
-  <!-- =====================================================================
-       HEADER
-       ===================================================================== -->
-  <header class="site-header sticky top-0 z-40 bg-white border-b border-[var(--color-border)]">
-    <div class="container">
-      <div class="flex items-center justify-between h-16 gap-4">
+<!-- ================= MOBILE MENU ================= -->
+<div class="mobile-menu" id="mobile-menu" data-mobile-menu aria-hidden="true">
+  <div class="mobile-menu-head">
+    <span class="logo-name">[Your Company Name]</span>
+    <button class="hamburger" data-menu-close aria-label="Close menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <nav aria-label="Mobile primary"><ul><li><a href="/home">Home</a></li><li><a href="/about">About</a></li><li><a href="/services">Services</a></li><li><a href="/service-areas">Service Areas</a></li><li><a href="/gallery">Gallery</a></li><li><a href="/testimonials">Reviews</a></li><li><a href="/faq">FAQ</a></li><li><a href="/contact">Contact</a></li></ul></nav>
+  <div class="mobile-menu-footer">
+    <a href="tel:[Phone Number]" class="btn btn-outline-white">Call [Phone Number]</a>
+    <a href="/quote" class="btn btn-primary">Free Quote</a>
+  </div>
+</div>
 
-        <!-- Logo -->
-        <a href="index.html" class="flex flex-col leading-none shrink-0">
-          <span class="font-heading font-bold text-xl text-[var(--color-primary)]">[Your Company Name]</span>
-          <span class="text-[11px] tracking-wider uppercase text-[var(--color-text-muted)]">Crews · Climbers · Cleanup</span>
-        </a>
+<main id="main">
 
-        <!-- Desktop Nav -->
-        <nav class="hidden lg:flex gap-6" aria-label="Primary navigation">
-          <a href="index.html"         class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors">Home</a>
-          <a href="about.html"         class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors">About</a>
-          <a href="services.html"      class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors" aria-current="page">Services</a>
-          <a href="service-areas.html" class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors">Service Areas</a>
-          <a href="gallery.html"       class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors">Gallery</a>
-          <a href="testimonials.html"  class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors">Reviews</a>
-          <a href="faq.html"           class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors">FAQ</a>
-          <a href="blog.html"          class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors">Blog</a>
-          <a href="contact.html"       class="nav-link text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors">Contact</a>
-        </nav>
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="/home">Home</a> &nbsp;/&nbsp; Services</div>
+    <h1>Services<br><em style="color:var(--orange);font-style:normal;">Done Right.</em></h1>
+    <p style="color:rgba(255,255,255,0.78);max-width:580px;margin:1rem 0 0;font-size:1.0625rem;">Six core services. One standard. Flat-rate pricing, clean work, and a 15-year workmanship guarantee on every job.</p>
+  </div>
+</section>
 
-        <!-- Right: Phone + CTA -->
-        <div class="flex items-center gap-3 shrink-0">
-          <a href="tel:[Phone Number]" class="hidden md:flex items-center gap-2 text-sm font-semibold text-[var(--color-primary)]" aria-label="Call us at [Phone Number]">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.21 3.18 2 2 0 0 1 3.22 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16z"/></svg>
-            [Phone Number]
-          </a>
-          <a href="quote.html" class="btn-primary hidden md:inline-flex text-sm py-2.5 px-5">Get a Free Quote</a>
+<!-- Quick service nav grid (photo cards, anchor links) -->
+<section class="section" style="padding:3rem 0;">
+  <div class="container">
+    <div class="grid-3" style="gap:0.75rem;">
+      <a href="#kitchen" class="svc-card" style="aspect-ratio:5/3;">
+        <div class="svc-img" style="background-image:url('https://cdn.jsdelivr.net/gh/annasfilig-max/tree-removal-website@2e5de6e/assets/images/service-1.jpg');"></div>
+        <span class="svc-num">01 / Big Oak</span>
+        <h3 style="font-size:1.25rem;">Big Oak Remodels</h3>
+      </a>
+      <a href="#bath" class="svc-card" style="aspect-ratio:5/3;">
+        <div class="svc-img" style="background-image:url('https://cdn.jsdelivr.net/gh/annasfilig-max/tree-removal-website@2e5de6e/assets/images/service-2.jpg');"></div>
+        <span class="svc-num">02 / Bath</span>
+        <h3 style="font-size:1.25rem;">Tree Trimming</h3>
+      </a>
+      <a href="#cabinets" class="svc-card" style="aspect-ratio:5/3;">
+        <div class="svc-img" style="background-image:url('https://cdn.jsdelivr.net/gh/annasfilig-max/tree-removal-website@2e5de6e/assets/images/service-3.jpg');"></div>
+        <span class="svc-num">03 / Cabinets</span>
+        <h3 style="font-size:1.25rem;">Stump Grinding</h3>
+      </a>
+      <a href="#counters" class="svc-card" style="aspect-ratio:5/3;">
+        <div class="svc-img" style="background-image:url('https://cdn.jsdelivr.net/gh/annasfilig-max/tree-removal-website@2e5de6e/assets/images/service-4.jpg');"></div>
+        <span class="svc-num">04 / Counters</span>
+        <h3 style="font-size:1.25rem;">Storm Cleanup &amp; Surfaces</h3>
+      </a>
+      <a href="#tile" class="svc-card" style="aspect-ratio:5/3;">
+        <div class="svc-img" style="background-image:url('https://cdn.jsdelivr.net/gh/annasfilig-max/tree-removal-website@2e5de6e/assets/images/service-5.jpg');"></div>
+        <span class="svc-num">05 / Tile</span>
+        <h3 style="font-size:1.25rem;">Stump Grind &amp; Stone</h3>
+      </a>
+      <a href="#design" class="svc-card" style="aspect-ratio:5/3;">
+        <div class="svc-img" style="background-image:url('https://cdn.jsdelivr.net/gh/annasfilig-max/tree-removal-website@2e5de6e/assets/images/service-6.jpg');"></div>
+        <span class="svc-num">06 / Design</span>
+        <h3 style="font-size:1.25rem;">Crane Removal</h3>
+      </a>
+    </div>
+  </div>
+</section>
 
-          <!-- Hamburger -->
-          <button class="lg:hidden p-2 rounded-md text-[var(--color-text)]" aria-label="Toggle menu" aria-expanded="false" data-menu-toggle>
-            <svg data-icon-hamburger xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-            <svg data-icon-close class="hidden" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-          </button>
+<!-- ================= SERVICE 01 — KITCHEN REMODELS ================= -->
+<section id="ac-repair" class="section section-alt">
+  <div class="container">
+    <div class="sec-head">
+      <span class="idx">01 / Big Oak</span>
+      <h2>Big Oak Remodels —<br>Same-Day, Every Brand.</h2>
+      <span class="meta">Design &middot; Demo &middot; Build</span>
+    </div>
+    <div class="grid-2">
+      <div><img src="https://cdn.jsdelivr.net/gh/annasfilig-max/tree-removal-website@2e5de6e/assets/images/service-1.jpg" alt="Designer reviewing kitchen layout with homeowner"></div>
+      <div>
+        <p class="lead">When the AC quits, you don't want a sales pitch — you want it cold again. We diagnose every brand, carry common parts on the truck, and most repairs are done the same visit.</p>
+        <strong style="display:block;font-family:var(--font-mono);font-size:0.6875rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-soft);margin-top:1.5rem;margin-bottom:0.5rem;">What's Included</strong>
+        <ul class="feature-list">
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Layout planning, demo, framing &amp; finishing</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Custom cabinetry, counters &amp; lighting</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Backsplash, tile floors, hardwood &amp; LVP</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Honest scope-vs-budget recommendations</li>
+        </ul>
+        <div style="display:flex;gap:0.75rem;flex-wrap:wrap;margin-top:1.75rem;">
+          <a href="/quote" class="btn btn-primary">Schedule a Visit</a>
+          <a href="tel:[Phone Number]" class="btn btn-secondary">Call [Phone Number]</a>
         </div>
       </div>
     </div>
+  </div>
+</section>
 
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="lg:hidden hidden bg-white border-t border-[var(--color-border)]" aria-label="Mobile navigation">
-      <div class="container py-4">
-        <nav class="flex flex-col">
-          <a href="index.html"         class="mobile-nav-link">Home</a>
-          <a href="about.html"         class="mobile-nav-link">About</a>
-          <a href="services.html"      class="mobile-nav-link" aria-current="page">Services</a>
-          <a href="service-areas.html" class="mobile-nav-link">Service Areas</a>
-          <a href="gallery.html"       class="mobile-nav-link">Gallery</a>
-          <a href="testimonials.html"  class="mobile-nav-link">Reviews</a>
-          <a href="faq.html"           class="mobile-nav-link">FAQ</a>
-          <a href="blog.html"          class="mobile-nav-link">Blog</a>
-          <a href="contact.html"       class="mobile-nav-link">Contact</a>
-        </nav>
-        <div class="mt-4 flex flex-col gap-3">
-          <a href="tel:[Phone Number]" class="flex items-center gap-2 text-sm font-semibold text-[var(--color-primary)]">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.21 3.18 2 2 0 0 1 3.22 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16z"/></svg>
-            [Phone Number]
-          </a>
-          <a href="quote.html" class="btn-primary text-center text-sm">Get a Free Quote</a>
+<!-- ================= SERVICE 02 — BATH REMODELS ================= -->
+<section id="heating-repair" class="section">
+  <div class="container">
+    <div class="sec-head">
+      <span class="idx">02 / Bath</span>
+      <h2>Tree Trimming —<br>From Sleek To Spa.</h2>
+      <span class="meta">Primary &middot; Guest &middot; Powder</span>
+    </div>
+    <div class="grid-2">
+      <div style="order:2;"><img src="https://cdn.jsdelivr.net/gh/annasfilig-max/tree-removal-website@2e5de6e/assets/images/service-2.jpg" alt="Tile installer hand-laying primary bath shower wall"></div>
+      <div style="order:1;">
+        <p class="lead">From clean second-bath refreshes to spa-grade primary baths — we handle the tile, plumbing, vanities, glass, and lighting in-house, so the timeline doesn't slip waiting on a sub.</p>
+        <strong style="display:block;font-family:var(--font-mono);font-size:0.6875rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-soft);margin-top:1.5rem;margin-bottom:0.5rem;">What's Included</strong>
+        <ul class="feature-list">
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Tile, plumbing &amp; vanity install</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Frameless glass, custom shower pans &amp; benches</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Heated floors, fans, lighting &amp; ventilation</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Smart fixtures &amp; touchless tech</li>
+        </ul>
+        <div style="display:flex;gap:0.75rem;flex-wrap:wrap;margin-top:1.75rem;">
+          <a href="/quote" class="btn btn-primary">Schedule a Visit</a>
+          <a href="tel:[Phone Number]" class="btn btn-secondary">Call [Phone Number]</a>
         </div>
       </div>
     </div>
-  </header>
-  <!-- END HEADER -->
+  </div>
+</section>
 
-  <!-- =====================================================================
-       MAIN CONTENT
-       ===================================================================== -->
-  <main id="main">
-
-    <!-- -------------------------------------------------------------------
-         PAGE HERO
-         ------------------------------------------------------------------- -->
-    <section class="page-hero" aria-label="Page header">
-      <div
-        style="position:absolute;inset:0;background-image:url('assets/images/hero.jpg');background-size:cover;background-position:center;opacity:0.25;"
-        role="img"
-        aria-label="Tree crew performing a large removal — replace with your own job-site photo"
-      ></div>
-      <div style="position:relative;z-index:1;">
-        <nav class="breadcrumb mb-4" aria-label="Breadcrumb">
-          <a href="index.html">Home</a>
-          <span class="breadcrumb-sep" aria-hidden="true">›</span>
-          <span aria-current="page">Services</span>
-        </nav>
-        <h1>Our Services</h1>
-        <p class="mt-3 max-w-xl mx-auto text-white/75 text-lg">Tree care done right — from a single limb to full property clearing.</p>
-      </div>
-    </section>
-
-    <!-- -------------------------------------------------------------------
-         INTRO BLOCK
-         ------------------------------------------------------------------- -->
-    <section class="section-pad bg-white" aria-labelledby="services-intro-heading">
-      <div class="container">
-        <div class="max-w-3xl mx-auto text-center">
-          <p class="eyebrow mb-3">Complete Services</p>
-          <h2 id="services-intro-heading">What We Offer</h2>
-          <p class="mt-5 mb-4">
-            From routine trimming that keeps your trees healthy and your property looking sharp, to complex removals that require rigging, cranes, and certified climbers — we handle the full spectrum of residential and commercial tree work. Every job is quoted in writing, staffed by trained crew, and backed by our workmanship guarantee.
-          </p>
-          <p>
-            We don't subcontract to unknown crews or cut corners on cleanup. When we leave your property, you won't find a pile of brush at the curb or damage to your lawn. That reputation took years to build and every job we take is a chance to protect it.
-          </p>
+<!-- ================= SERVICE 03 — CABINETS ================= -->
+<section id="ac-install" class="section section-alt">
+  <div class="container">
+    <div class="sec-head">
+      <span class="idx">03 / Cabinets</span>
+      <h2>Stump Grinding —<br>Sized For Your Home.</h2>
+      <span class="meta">Custom &middot; Semi-Custom &middot; Refacing</span>
+    </div>
+    <div class="grid-2">
+      <div><img src="https://cdn.jsdelivr.net/gh/annasfilig-max/tree-removal-website@2e5de6e/assets/images/service-3.jpg" alt="Custom cabinetry install in finished kitchen"></div>
+      <div>
+        <p class="lead">Right-sized systems, clean install, real warranties we stand behind. We don't push the biggest unit — we install the right one.</p>
+        <strong style="display:block;font-family:var(--font-mono);font-size:0.6875rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-soft);margin-top:1.5rem;margin-bottom:0.5rem;">What's Included</strong>
+        <ul class="feature-list">
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Custom builds sized to your exact kitchen</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Wood-Mode, Brookhaven, Crystal &amp; semi-custom</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Hardware, soft-close, lighting &mdash; included</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> 10-year warranty, financing available</li>
+        </ul>
+        <div style="display:flex;gap:0.75rem;flex-wrap:wrap;margin-top:1.75rem;">
+          <a href="/quote" class="btn btn-primary">Get a Free Quote</a>
+          <a href="tel:[Phone Number]" class="btn btn-secondary">Call [Phone Number]</a>
         </div>
-      </div>
-    </section>
-
-    <!-- -------------------------------------------------------------------
-         SERVICE ONE — Tree Removal (image right)
-         ------------------------------------------------------------------- -->
-    <section id="service-one" class="section-pad bg-[var(--color-bg-alt)]" aria-labelledby="svc1-heading">
-      <div class="container">
-        <div class="grid lg:grid-cols-2 gap-12 items-center">
-
-          <!-- Text -->
-          <div>
-            <p class="eyebrow mb-3">Service One</p>
-            <h2 id="svc1-heading">Tree Removal</h2>
-            <p class="mt-5 mb-4">
-              Whether a tree has died, been damaged in a storm, grown too close to a structure, or simply needs to come down to make room for construction, we handle the full removal safely and efficiently. Our crew evaluates the best approach for your specific site — felling, sectional dismantling, or crane-assisted removal — before any chainsaw touches the wood.
-            </p>
-            <p class="mb-6">
-              We protect surrounding turf, landscaping, and structures throughout the process. Once the tree is down, we chip or haul the debris, grind surface roots if needed, and rake the area clean. You get a job site that's ready for whatever comes next.
-            </p>
-
-            <h3 class="text-base font-semibold mb-3 text-[var(--color-primary)]">What's included</h3>
-            <ul class="space-y-2 mb-8">
-              <li class="flex items-start gap-2 text-sm"><span class="mt-1 text-[var(--color-accent)]" aria-hidden="true">&#10003;</span> Expert team assessment and removal plan before any work begins</li>
-              <li class="flex items-start gap-2 text-sm"><span class="mt-1 text-[var(--color-accent)]" aria-hidden="true">&#10003;</span> Safe, insured work performed by trained climbers and ground crew</li>
-              <li class="flex items-start gap-2 text-sm"><span class="mt-1 text-[var(--color-accent)]" aria-hidden="true">&#10003;</span> Complete site cleanup — wood, chips, and brush hauled away</li>
-              <li class="flex items-start gap-2 text-sm"><span class="mt-1 text-[var(--color-accent)]" aria-hidden="true">&#10003;</span> Written guarantee on all workmanship and site condition</li>
-            </ul>
-
-            <a href="quote.html" class="btn-primary">Get a Quote</a>
-          </div>
-
-          <!-- Image -->
-          <div>
-            <img
-              src="assets/images/service-1.jpg"
-              alt="Tree removal service — full tree take-down in progress on residential property"
-              class="rounded-xl shadow-lg w-full object-cover"
-              loading="lazy"
-              width="700"
-              height="500"
-            >
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- -------------------------------------------------------------------
-         SERVICE TWO — Tree Trimming & Pruning (image left)
-         ------------------------------------------------------------------- -->
-    <section id="service-two" class="section-pad bg-white" aria-labelledby="svc2-heading">
-      <div class="container">
-        <div class="grid lg:grid-cols-2 gap-12 items-center">
-
-          <!-- Image -->
-          <div class="order-2 lg:order-1">
-            <img
-              src="assets/images/service-2.jpg"
-              alt="Tree trimming and pruning service — arborist shaping branches on residential property"
-              class="rounded-xl shadow-lg w-full object-cover"
-              loading="lazy"
-              width="700"
-              height="500"
-            >
-          </div>
-
-          <!-- Text -->
-          <div class="order-1 lg:order-2">
-            <p class="eyebrow mb-3">Service Two</p>
-            <h2 id="svc2-heading">Tree Trimming &amp; Pruning</h2>
-            <p class="mt-5 mb-4">
-              Regular trimming is one of the most important things you can do to extend the life of a tree. Removing dead wood, crossing branches, and overgrown limbs improves airflow, reduces disease pressure, and prevents limbs from threatening roofs, gutters, and power lines. Our arborists prune to species-appropriate standards — not just to what looks tidy.
-            </p>
-            <p class="mb-6">
-              Crown raising, crown thinning, directional pruning for clearance from structures — we do it all with hand tools and aerial equipment, never topping or making cuts that compromise long-term tree health. The difference between a proper prune and a hack job shows up three years later.
-            </p>
-
-            <h3 class="text-base font-semibold mb-3 text-[var(--color-primary)]">What's included</h3>
-            <ul class="space-y-2 mb-8">
-              <li class="flex items-start gap-2 text-sm"><span class="mt-1 text-[var(--color-accent)]" aria-hidden="true">&#10003;</span> Expert team assessment of tree health and structure before pruning</li>
-              <li class="flex items-start gap-2 text-sm"><span class="mt-1 text-[var(--color-accent)]" aria-hidden="true">&#10003;</span> Safe, insured work with proper cuts that promote long-term health</li>
-              <li class="flex items-start gap-2 text-sm"><span class="mt-1 text-[var(--color-accent)]" aria-hidden="true">&#10003;</span> Complete site cleanup — all trimmings chipped or hauled</li>
-              <li class="flex items-start gap-2 text-sm"><span class="mt-1 text-[var(--color-accent)]" aria-hidden="true">&#10003;</span> Written guarantee on all workmanship and site condition</li>
-            </ul>
-
-            <a href="quote.html" class="btn-primary">Get a Quote</a>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- -------------------------------------------------------------------
-         SERVICE THREE — Stump Grinding (image right)
-         ------------------------------------------------------------------- -->
-    <section id="service-three" class="section-pad bg-[var(--color-bg-alt)]" aria-labelledby="svc3-heading">
-      <div class="container">
-        <div class="grid lg:grid-cols-2 gap-12 items-center">
-
-          <!-- Text -->
-          <div>
-            <p class="eyebrow mb-3">Service Three</p>
-            <h2 id="svc3-heading">Stump Grinding</h2>
-            <p class="mt-5 mb-4">
-              A leftover stump is more than an eyesore — it's a tripping hazard, a magnet for pests and fungal disease, and an obstacle that limits what you can do with your yard. Our stump grinders work below grade to remove the stump and the major surface roots, leaving a bed of wood chips that can be raked out and seeded over.
-            </p>
-            <p class="mb-6">
-              We can handle stumps of any diameter, in tight spaces, on slopes, and in areas with limited equipment access. If you have multiple stumps from a prior removal or a storm, we typically discount multi-stump jobs — ask when you request your quote.
-            </p>
-
-            <h3 class="text-base font-semibold mb-3 text-[var(--color-primary)]">What's included</h3>
-            <ul class="space-y-2 mb-8">
-              <li class="flex items-start gap-2 text-sm"><span class="mt-1 text-[var(--color-accent)]" aria-hidden="true">&#10003;</span> Expert team assessment of stump diameter, root spread, and access</li>
-              <li class="flex items-start gap-2 text-sm"><span class="mt-1 text-[var(--color-accent)]" aria-hidden="true">&#10003;</span> Safe, insured grinding below grade using professional equipment</li>
-              <li class="flex items-start gap-2 text-sm"><span class="mt-1 text-[var(--color-accent)]" aria-hidden="true">&#10003;</span> Complete site cleanup — chips raked and area left level</li>
-              <li class="flex items-start gap-2 text-sm"><span class="mt-1 text-[var(--color-accent)]" aria-hidden="true">&#10003;</span> Written guarantee on all workmanship and site condition</li>
-            </ul>
-
-            <a href="quote.html" class="btn-primary">Get a Quote</a>
-          </div>
-
-          <!-- Image -->
-          <div>
-            <img
-              src="assets/images/service-3.jpg"
-              alt="Stump grinding service — professional equipment removing tree stump below grade"
-              class="rounded-xl shadow-lg w-full object-cover"
-              loading="lazy"
-              width="700"
-              height="500"
-            >
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- -------------------------------------------------------------------
-         SERVICE FOUR — Storm Damage Cleanup (image left)
-         ------------------------------------------------------------------- -->
-    <section id="service-four" class="section-pad bg-white" aria-labelledby="svc4-heading">
-      <div class="container">
-        <div class="grid lg:grid-cols-2 gap-12 items-center">
-
-          <!-- Image -->
-          <div class="order-2 lg:order-1">
-            <img
-              src="assets/images/service-4.jpg"
-              alt="Emergency storm damage cleanup — crew removing fallen tree from residential property"
-              class="rounded-xl shadow-lg w-full object-cover"
-              loading="lazy"
-              width="700"
-              height="500"
-            >
-          </div>
-
-          <!-- Text -->
-          <div class="order-1 lg:order-2">
-            <p class="eyebrow mb-3">Service Four</p>
-            <h2 id="svc4-heading">Storm Damage Cleanup</h2>
-            <p class="mt-5 mb-4">
-              When a storm drops a tree on your property, you need a crew that can respond quickly and work safely in difficult conditions. We offer priority scheduling after significant weather events and are set up to handle everything from scattered limbs across the driveway to a full tree on a structure.
-            </p>
-            <p class="mb-6">
-              If a tree has contacted your home or garage, we coordinate with your insurance adjuster and can provide documentation of damage. We focus on making the site safe first — stopping active damage — then completing the full cleanup once conditions allow.
-            </p>
-
-            <h3 class="text-base font-semibold mb-3 text-[var(--color-primary)]">What's included</h3>
-            <ul class="space-y-2 mb-8">
-              <li class="flex items-start gap-2 text-sm"><span class="mt-1 text-[var(--color-accent)]" aria-hidden="true">&#10003;</span> Expert team assessment for safety hazards before any work begins</li>
-              <li class="flex items-start gap-2 text-sm"><span class="mt-1 text-[var(--color-accent)]" aria-hidden="true">&#10003;</span> Safe, insured work with full insurance documentation available</li>
-              <li class="flex items-start gap-2 text-sm"><span class="mt-1 text-[var(--color-accent)]" aria-hidden="true">&#10003;</span> Complete site cleanup — all debris removed, area raked and cleared</li>
-              <li class="flex items-start gap-2 text-sm"><span class="mt-1 text-[var(--color-accent)]" aria-hidden="true">&#10003;</span> Written guarantee on all workmanship and site condition</li>
-            </ul>
-
-            <a href="quote.html" class="btn-primary">Get a Quote</a>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- -------------------------------------------------------------------
-         SERVICE FIVE — Land Clearing (image right)
-         ------------------------------------------------------------------- -->
-    <section id="service-five" class="section-pad bg-[var(--color-bg-alt)]" aria-labelledby="svc5-heading">
-      <div class="container">
-        <div class="grid lg:grid-cols-2 gap-12 items-center">
-
-          <!-- Text -->
-          <div>
-            <p class="eyebrow mb-3">Service Five</p>
-            <h2 id="svc5-heading">Land Clearing</h2>
-            <p class="mt-5 mb-4">
-              Building a new home, adding an outbuilding, expanding a yard, or reclaiming acreage that's been overtaken by brush and scrub trees? We clear lots of any size, handling tree felling, stump grinding, brush removal, and debris hauling as a single coordinated project. We work with your grading and construction timeline.
-            </p>
-            <p class="mb-6">
-              Selective clearing is also an option when you want to keep established specimen trees while removing surrounding scrub. We'll flag the keepers before any equipment runs so there's no confusion on site.
-            </p>
-
-            <h3 class="text-base font-semibold mb-3 text-[var(--color-primary)]">What's included</h3>
-            <ul class="space-y-2 mb-8">
-              <li class="flex items-start gap-2 text-sm"><span class="mt-1 text-[var(--color-accent)]" aria-hidden="true">&#10003;</span> Expert team assessment and selective clearing plan before work begins</li>
-              <li class="flex items-start gap-2 text-sm"><span class="mt-1 text-[var(--color-accent)]" aria-hidden="true">&#10003;</span> Safe, insured clearing with equipment suited to the terrain and scope</li>
-              <li class="flex items-start gap-2 text-sm"><span class="mt-1 text-[var(--color-accent)]" aria-hidden="true">&#10003;</span> Complete site cleanup — stumps ground, brush chipped or hauled</li>
-              <li class="flex items-start gap-2 text-sm"><span class="mt-1 text-[var(--color-accent)]" aria-hidden="true">&#10003;</span> Written guarantee on all workmanship and site condition</li>
-            </ul>
-
-            <a href="quote.html" class="btn-primary">Get a Quote</a>
-          </div>
-
-          <!-- Image -->
-          <div>
-            <img
-              src="assets/images/service-6.jpg"
-              alt="Land clearing and lot clearing service — trees and brush removed for construction"
-              class="rounded-xl shadow-lg w-full object-cover"
-              loading="lazy"
-              width="700"
-              height="500"
-            >
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- -------------------------------------------------------------------
-         SERVICE SIX — Emergency Tree Service (image left)
-         ------------------------------------------------------------------- -->
-    <section id="service-six" class="section-pad bg-white" aria-labelledby="svc6-heading">
-      <div class="container">
-        <div class="grid lg:grid-cols-2 gap-12 items-center">
-
-          <!-- Image -->
-          <div class="order-2 lg:order-1">
-            <img
-              src="assets/images/service-5.jpg"
-              alt="Tree health assessment — certified arborist inspecting tree condition on site"
-              class="rounded-xl shadow-lg w-full object-cover"
-              loading="lazy"
-              width="700"
-              height="500"
-            >
-          </div>
-
-          <!-- Text -->
-          <div class="order-1 lg:order-2">
-            <p class="eyebrow mb-3">Service Six</p>
-            <h2 id="svc6-heading">Emergency Tree Service</h2>
-            <p class="mt-5 mb-4">
-              Some tree problems can't wait until Monday morning. A leaning trunk over a bedroom, a limb resting on a power line, or a tree that's split and ready to drop — these situations require a crew that can respond around the clock. We offer 24/7 emergency service for situations that pose an immediate risk to life or property.
-            </p>
-            <p class="mb-6">
-              When you call our emergency line, you reach a real crew member — not an answering service. We'll assess your situation over the phone, dispatch the right equipment, and give you an honest timeline. Emergency rates apply after hours and on holidays, and we'll be upfront about costs before we roll.
-            </p>
-
-            <h3 class="text-base font-semibold mb-3 text-[var(--color-primary)]">What's included</h3>
-            <ul class="space-y-2 mb-8">
-              <li class="flex items-start gap-2 text-sm"><span class="mt-1 text-[var(--color-accent)]" aria-hidden="true">&#10003;</span> Expert team assessment by phone before dispatch to confirm the hazard</li>
-              <li class="flex items-start gap-2 text-sm"><span class="mt-1 text-[var(--color-accent)]" aria-hidden="true">&#10003;</span> Safe, insured work with 24/7 crew availability year-round</li>
-              <li class="flex items-start gap-2 text-sm"><span class="mt-1 text-[var(--color-accent)]" aria-hidden="true">&#10003;</span> Complete site cleanup following hazard mitigation</li>
-              <li class="flex items-start gap-2 text-sm"><span class="mt-1 text-[var(--color-accent)]" aria-hidden="true">&#10003;</span> Written guarantee on all workmanship and site condition</li>
-            </ul>
-
-            <a href="tel:[Phone Number]" class="btn-primary">Call Us Now</a>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- -------------------------------------------------------------------
-         COMPARISON BAND — Why homeowners choose us
-         ------------------------------------------------------------------- -->
-    <section class="section-pad bg-[var(--color-bg-alt)]" aria-labelledby="why-us-heading">
-      <div class="container">
-        <div class="text-center mb-12">
-          <p class="eyebrow mb-3">The Difference</p>
-          <h2 id="why-us-heading">Why Homeowners Choose Us</h2>
-          <p class="mt-4 max-w-2xl mx-auto">We get compared to other crews regularly. Here's what sets us apart from the flyers on your mailbox.</p>
-        </div>
-
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-
-          <!-- Reason 1 -->
-          <div class="card text-center">
-            <div class="flex justify-center mb-4">
-              <div class="w-14 h-14 rounded-full flex items-center justify-center" style="background: rgba(45,74,43,0.1);">
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2d4a2b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-              </div>
-            </div>
-            <h3 class="text-base mb-2">Safety-First Crews</h3>
-            <p class="text-sm text-[var(--color-text-muted)]">Every job follows ANSI Z133 safety standards. Our climbers wear full PPE, use rated rigging, and complete ongoing safety training. We don't rush — we do it right.</p>
-          </div>
-
-          <!-- Reason 2 -->
-          <div class="card text-center">
-            <div class="flex justify-center mb-4">
-              <div class="w-14 h-14 rounded-full flex items-center justify-center" style="background: rgba(45,74,43,0.1);">
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2d4a2b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-              </div>
-            </div>
-            <h3 class="text-base mb-2">Clear Up-Front Pricing</h3>
-            <p class="text-sm text-[var(--color-text-muted)]">Your written quote covers everything: labor, equipment, haul-off, and cleanup. No add-ons when the crew arrives, no "we didn't realize" surprises. What you signed is what you pay.</p>
-          </div>
-
-          <!-- Reason 3 -->
-          <div class="card text-center">
-            <div class="flex justify-center mb-4">
-              <div class="w-14 h-14 rounded-full flex items-center justify-center" style="background: rgba(45,74,43,0.1);">
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2d4a2b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-              </div>
-            </div>
-            <h3 class="text-base mb-2">Cleanup Included</h3>
-            <p class="text-sm text-[var(--color-text-muted)]">We haul everything — wood, brush, chips, and small debris — unless you'd like to keep firewood or mulch. The site is raked and blown down before we load the last truck.</p>
-          </div>
-
-          <!-- Reason 4 -->
-          <div class="card text-center">
-            <div class="flex justify-center mb-4">
-              <div class="w-14 h-14 rounded-full flex items-center justify-center" style="background: rgba(45,74,43,0.1);">
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2d4a2b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-              </div>
-            </div>
-            <h3 class="text-base mb-2">Fully Licensed &amp; Insured</h3>
-            <p class="text-sm text-[var(--color-text-muted)]">We carry general liability and workers' comp. License #[License #]. Certificates of insurance are available on request for HOAs, property managers, or your own peace of mind.</p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- -------------------------------------------------------------------
-         CTA BAND
-         ------------------------------------------------------------------- -->
-    <section class="cta-band" aria-label="Call to action">
-      <div class="container max-w-2xl">
-        <p class="eyebrow mb-4" style="color: var(--color-accent);">Get Started Today</p>
-        <h2 class="mb-4">Need Help Today? Call [Phone Number]</h2>
-        <p class="mb-8 text-lg" style="color: rgba(255,255,255,0.8);">We answer our own phones and can usually schedule estimates within a day or two. For emergencies, we're available around the clock.</p>
-        <div class="flex flex-wrap justify-center gap-4">
-          <a href="quote.html" class="btn-primary">Request a Free Quote</a>
-          <a href="tel:[Phone Number]" class="btn-secondary-white">Call Us Now</a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-  <!-- END MAIN -->
-
-  <!-- =====================================================================
-       FOOTER
-       ===================================================================== -->
-  <footer class="bg-[var(--color-primary-dark)] text-white pt-16 pb-8 mt-0">
-    <div class="container">
-
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
-
-        <!-- Col 1: Brand -->
-        <div>
-          <div class="mb-4">
-            <span class="font-heading font-bold text-2xl text-white">[Your Company Name]</span>
-            <p class="text-[11px] tracking-wider uppercase mt-0.5" style="color: rgba(255,255,255,0.5);">Crews · Climbers · Cleanup</p>
-          </div>
-          <p class="text-sm leading-relaxed mb-5" style="color: rgba(255,255,255,0.65);">Expert tree removal, trimming, and emergency service for homeowners and businesses across [Service Region]. Locally owned, fully insured, and committed to leaving every job site cleaner than we found it.</p>
-          <p class="text-sm" style="color: rgba(255,255,255,0.5);">Licensed &amp; Insured · License #[License #]</p>
-        </div>
-
-        <!-- Col 2: Quick Links -->
-        <div>
-          <p class="footer-heading">Quick Links</p>
-          <ul>
-            <li><a href="index.html"         class="footer-link">Home</a></li>
-            <li><a href="about.html"         class="footer-link">About Us</a></li>
-            <li><a href="services.html"      class="footer-link">Services</a></li>
-            <li><a href="service-areas.html" class="footer-link">Service Areas</a></li>
-            <li><a href="gallery.html"       class="footer-link">Gallery</a></li>
-            <li><a href="testimonials.html"  class="footer-link">Reviews</a></li>
-            <li><a href="faq.html"           class="footer-link">FAQ</a></li>
-            <li><a href="blog.html"          class="footer-link">Blog</a></li>
-            <li><a href="contact.html"       class="footer-link">Contact</a></li>
-          </ul>
-        </div>
-
-        <!-- Col 3: Services -->
-        <div>
-          <p class="footer-heading">Services</p>
-          <ul>
-            <li><a href="services.html#service-one"   class="footer-link">Tree Removal</a></li>
-            <li><a href="services.html#service-two"   class="footer-link">Tree Trimming &amp; Pruning</a></li>
-            <li><a href="services.html#service-three" class="footer-link">Stump Grinding</a></li>
-            <li><a href="services.html#service-four"  class="footer-link">Storm Damage Cleanup</a></li>
-            <li><a href="services.html#service-five"  class="footer-link">Land Clearing</a></li>
-            <li><a href="services.html#service-six"   class="footer-link">Emergency Service</a></li>
-          </ul>
-        </div>
-
-        <!-- Col 4: Contact -->
-        <div>
-          <p class="footer-heading">Contact</p>
-
-          <div class="footer-contact-row">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.21 3.18 2 2 0 0 1 3.22 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16z"/></svg>
-            <a href="tel:[Phone Number]">[Phone Number]</a>
-          </div>
-
-          <div class="footer-contact-row">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <a href="mailto:[Email Address]">[Email Address]</a>
-          </div>
-
-          <div class="footer-contact-row">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <address style="font-style: normal;">[Street Address]<br>[City], [State] [ZIP]</address>
-          </div>
-
-          <div class="footer-contact-row">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            <span>Mon–Sat 7am–6pm<br><span style="color: var(--color-accent);">24/7 Storm Response</span></span>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Divider -->
-      <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-
-        <!-- Social Icons -->
-        <div class="flex items-center gap-3">
-          <a href="https://facebook.com/[your-page]" class="social-icon" aria-label="Follow us on Facebook" target="_blank" rel="noopener">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-          </a>
-          <a href="https://instagram.com/[your-handle]" class="social-icon" aria-label="Follow us on Instagram" target="_blank" rel="noopener">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-          </a>
-          <a href="https://www.google.com/maps?cid=[your-cid]" class="social-icon" aria-label="Find us on Google" target="_blank" rel="noopener">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          </a>
-        </div>
-
-        <!-- Legal -->
-        <p class="text-xs text-center" style="color: rgba(255,255,255,0.4);">
-          &copy; [Year] [Your Company Name]. All rights reserved.
-          &nbsp;·&nbsp;
-          <a href="privacy.html" class="hover:text-white transition-colors">Privacy</a>
-          &nbsp;·&nbsp;
-          <a href="terms.html" class="hover:text-white transition-colors">Terms</a>
-        </p>
-
       </div>
     </div>
-  </footer>
-  <!-- END FOOTER -->
+  </div>
+</section>
 
-  <script src="assets/js/main.js"></script>
+<!-- ================= SERVICE 04 — COUNTERTOPS ================= -->
+<section id="furnace-install" class="section">
+  <div class="container">
+    <div class="sec-head">
+      <span class="idx">04 / Counters</span>
+      <h2>Storm Cleanup &amp; Surfaces<br>Installation.</h2>
+      <span class="meta">Quartz &middot; Granite &middot; Marble</span>
+    </div>
+    <div class="grid-2">
+      <div style="order:2;"><img src="https://cdn.jsdelivr.net/gh/annasfilig-max/tree-removal-website@2e5de6e/assets/images/service-4.jpg" alt="Quartz countertop being templated and installed"></div>
+      <div style="order:1;">
+        <p class="lead">High-efficiency furnaces and heat pumps sized to your home — not what's on the truck this week. We pull the permits, run the gas, and clean up after.</p>
+        <strong style="display:block;font-family:var(--font-mono);font-size:0.6875rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-soft);margin-top:1.5rem;margin-bottom:0.5rem;">What's Included</strong>
+        <ul class="feature-list">
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Quartz, granite, marble, butcher block, soapstone</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Templating, fabrication, install &mdash; handled in-house</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Honest material guidance &mdash; no markup games</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Lifetime workmanship guarantee</li>
+        </ul>
+        <div style="display:flex;gap:0.75rem;flex-wrap:wrap;margin-top:1.75rem;">
+          <a href="/quote" class="btn btn-primary">Get a Free Quote</a>
+          <a href="tel:[Phone Number]" class="btn btn-secondary">Call [Phone Number]</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICE 05 — TILE ================= -->
+<section id="air-quality" class="section section-alt">
+  <div class="container">
+    <div class="sec-head">
+      <span class="idx">05 / Tile</span>
+      <h2>Stump Grind &amp; Stone —<br>Cleaner, Quieter, Drier.</h2>
+      <span class="meta">Showers &middot; Backsplashes &middot; Floors</span>
+    </div>
+    <div class="grid-2">
+      <div><img src="https://cdn.jsdelivr.net/gh/annasfilig-max/tree-removal-website@2e5de6e/assets/images/service-5.jpg" alt="Custom backsplash and floor tile work in primary bath"></div>
+      <div>
+        <p class="lead">Most homes have a duct problem, an allergy problem, or both. We measure, fix, and seal — no $99 "duct cleaning" gimmicks.</p>
+        <strong style="display:block;font-family:var(--font-mono);font-size:0.6875rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-soft);margin-top:1.5rem;margin-bottom:0.5rem;">What's Included</strong>
+        <ul class="feature-list">
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Backsplashes, accent walls &amp; mosaics</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Shower walls, niches &amp; benches</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Heated floors, Schluter trim &amp; waterproofing</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Hand-laid by tile specialists, not subs</li>
+        </ul>
+        <div style="display:flex;gap:0.75rem;flex-wrap:wrap;margin-top:1.75rem;">
+          <a href="/quote" class="btn btn-primary">Schedule an Audit</a>
+          <a href="tel:[Phone Number]" class="btn btn-secondary">Call [Phone Number]</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICE 06 — DESIGN ================= -->
+<section id="maintenance" class="section">
+  <div class="container">
+    <div class="sec-head">
+      <span class="idx">06 / Design</span>
+      <h2>Crane Removal —<br>Set It &amp; Forget It.</h2>
+      <span class="meta">3D Visualization &middot; Material Selection</span>
+    </div>
+    <div class="grid-2">
+      <div style="order:2;"><img src="https://cdn.jsdelivr.net/gh/annasfilig-max/tree-removal-website@2e5de6e/assets/images/service-6.jpg" alt="Technician performing seasonal Remodeling tune-up"></div>
+      <div style="order:1;">
+        <p class="lead">Most breakdowns aren't surprises — they're missed maintenance. Two visits a year, priority dispatch, no overtime fees, cancel anytime.</p>
+        <strong style="display:block;font-family:var(--font-mono);font-size:0.6875rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-soft);margin-top:1.5rem;margin-bottom:0.5rem;">Member Benefits</strong>
+        <ul class="feature-list">
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> 3D renderings &amp; layout drawings</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> On-site material &amp; finish selection</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Fixed-price quote within 5 business days</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> No-obligation consult — only commit if you love it</li>
+        </ul>
+        <div style="display:flex;gap:0.75rem;flex-wrap:wrap;margin-top:1.75rem;">
+          <a href="/quote" class="btn btn-primary">Join The Plan</a>
+          <a href="tel:[Phone Number]" class="btn btn-secondary">Call [Phone Number]</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY US ================= -->
+<section class="section">
+  <div class="container">
+    <div class="sec-head">
+      <span class="idx">07 / Why Us</span>
+      <h2>Work That<br>Holds Up.</h2>
+      <span class="meta">No Calls Twice</span>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <div class="icon-circle"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4"/></svg></div>
+        <h3>Flat-Rate Pricing</h3>
+        <p style="color:var(--ink-soft);">Know the number before the work starts. The invoice matches the quote &mdash; that's the deal.</p>
+      </div>
+      <div class="card">
+        <div class="icon-circle"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+        <h3>On-Time Completion</h3>
+        <p style="color:var(--ink-soft);">Most visits booked by noon are on the schedule that afternoon. 24/7 for emergencies.</p>
+      </div>
+      <div class="card">
+        <div class="icon-circle"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3>Workmanship Guarantee</h3>
+        <p style="color:var(--ink-soft);">If something we did isn't right, one call brings us back. Lifetime workmanship guarantee on installs.</p>
+      </div>
+      <div class="card">
+        <div class="icon-circle"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div>
+        <h3>Vetted Technicians</h3>
+        <p style="color:var(--ink-soft);">Background-checked, drug-tested, NKBA-trained, and uniformed. Never sub-contracted.</p>
+      </div>
+      <div class="card">
+        <div class="icon-circle"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l2-2 4 4 8-8 4 4"/></svg></div>
+        <h3>Zero Pressure</h3>
+        <p style="color:var(--ink-soft);">No commission-driven sales scripts. We tell you what we'd do in our own home, then leave.</p>
+      </div>
+      <div class="card">
+        <div class="icon-circle"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <h3>Real People Answer</h3>
+        <p style="color:var(--ink-soft);">No phone trees, no offshore call centers. Local dispatchers who know the techs by name.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="cta-band">
+  <div class="container">
+    <div>
+      <span class="eyebrow" style="color:var(--orange);">08 / Get Started</span>
+      <h2>Need It Fixed Today?</h2>
+      <p>Most same-day visits are booked by noon. Tell us what's going on and we'll lock in a window.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:0.875rem;">
+      <a href="tel:[Phone Number]" class="btn btn-primary btn-lg">Call [Phone Number]</a>
+      <a href="/quote" class="btn btn-outline-white btn-lg">Request a Visit</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo-name">[Your Company Name]</div>
+        <div class="logo-tag">Tree Removal &amp; Tree Care</div>
+        <p style="margin-top:1rem;color:rgba(255,255,255,0.7);max-width:36ch;">Family-owned remodeling company serving [Service Region] since [Year Founded]. Honest work, fair pricing, and a guarantee behind every job.</p>
+        <p style="font-family:var(--font-mono);font-size:0.6875rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-top:1rem;">Lic #[License #] &middot; Insured &middot; Bonded</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="/home">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/service-areas">Service Areas</a></li>
+          <li><a href="/gallery">Gallery</a></li>
+          <li><a href="/testimonials">Reviews</a></li>
+          <li><a href="/faq">FAQ</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="/services#removal">Big Oak Remodels</a></li>
+          <li><a href="/services#trimming">Tree Trimming</a></li>
+          <li><a href="/services#stump">Stump Grinding</a></li>
+          <li><a href="/services#emergency">Storm Cleanup &amp; Surfaces</a></li>
+          <li><a href="/services#clearing">Stump Grind &amp; Stone</a></li>
+          <li><a href="/services#crane">Crane Removal</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Reach Us</h4>
+        <ul>
+          <li><a href="tel:[Phone Number]" style="font-family:var(--font-heading);font-weight:700;color:#fff;font-size:1.125rem;">[Phone Number]</a></li>
+          <li><a href="mailto:[Email]">[Email]</a></li>
+          <li>[Street Address]<br>[City, State ZIP]</li>
+          <li style="margin-top:0.75rem;font-family:var(--font-mono);font-size:0.6875rem;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.6);">Mon&ndash;Fri 7a&ndash;7p &middot; Sat 8a&ndash;4p<br>15-Yr Workmanship Dispatch</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="social-row">
+        <a href="#" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+        <a href="#" aria-label="Google"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22 11h-10v2.5h5.7c-.5 2.8-2.8 4.5-5.7 4.5-3.4 0-6.2-2.8-6.2-6.2s2.8-6.2 6.2-6.2c1.5 0 2.9.6 4 1.5l1.9-1.9C16 3.6 14.1 3 12 3 7 3 3 7 3 12s4 9 9 9c5.2 0 8.7-3.6 8.7-8.7 0-.4 0-.9-.1-1.3z"/></svg></a>
+      </div>
+      <div>&copy; <span data-year>2026</span> [Your Company Name] &middot; <a href="/privacy">Privacy</a> &middot; <a href="/terms">Terms</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/gh/annasfilig-max/tree-removal-website@2e5de6e/assets/js/main.js?v=22" defer></script>
 </body>
 </html>
